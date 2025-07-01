@@ -182,7 +182,7 @@ footer {
     background-color: var(--secondary-color);
     padding: 1rem 10px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .social {
@@ -198,7 +198,7 @@ footer {
     align-items: center;
     width: 44px;
     height: 44px;
-    border: 1px solid var(--text-color);
+    border: 2px solid var(--text-color);
     border-radius: 3em;
 }
 
