@@ -127,9 +127,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector(".selection").innerHTML = html;
 
             // I added these console logs to help debug the script
-            console.log(className);
-            console.log(creditTotal);
-            console.log(filtered);
+            //console.log(className);
+            //console.log(creditTotal);
+            //console.log(filtered);
         });
     });
 });

@@ -12,6 +12,6 @@ let lastModDate = new Date(document.lastModified);
 // This selects the element with the ID 'lastModified' and sets its text content to the last modified date in a "readable format"
 // Readable format: meaning simple date and time string otherwise it would be a long string
 // I put a sample of each output in the console
-console.log("Last modified date:", lastModDate);
-console.log("Last modified date:", lastModDate.toLocaleString());
+//console.log("Last modified date:", lastModDate);
+//console.log("Last modified date:", lastModDate.toLocaleString());
 document.getElementById("lastModified").textContent = "Last Modified: " + lastModDate.toLocaleString();
