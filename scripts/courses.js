@@ -1,3 +1,5 @@
+/* Given objects from WDD 231: Week 01 home page */
+// As instructed I altered each "completed" as true if I had completed the course.
 const courses = [
     {
         subject: 'CSE',
@@ -78,12 +80,20 @@ const courses = [
     }
 ]
 
+/* Course Filter */
+// This script filters courses based on the subject and calculates total credits for completed courses
 
+// This added event listener waits for the DOM to be fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', () => {
+    // This selects all buttons in the document and adds a click event listener to each button
     document.querySelectorAll('button').forEach(button => {
+        // When a button is clicked, it retrieves the class name of the button
         button.addEventListener('click', () => {
+            // Variable to hold the class name of the clicked button
             const className = button.className;
 
+            // This filters the courses array based on the class name
+            // If the class name is 'all', it includes all courses
             let filtered;
             if (className == 'all') {
                 filtered = courses;
@@ -93,6 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     course.subject === className);
             }
 
+            // This calculates the total credits for completed courses
+            // It uses reduce to add up the credits of courses that are marked as completed (true)
+            // It initializes with 0 and adds the credits of each completed course (true)
             const creditTotal = filtered.reduce((addCredits, course) => {
                 if (course.completed) {
                     return addCredits + course.credits;
@@ -102,12 +115,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }, 0);
             
+            // This sets the variable 'html' to a string of HTML buttons for each course
+            // Each button displays the course subject and number, and has an HTML id set to the course
+            // CSS will use the value of the completed property to style the button and will add a checkmark if completed
             const html = filtered.map(course =>
                 `<button id="${course.completed}">${course.subject} ${course.number}</button>`).join("");
             
+            // This updates the inner text of the HTML class 'totalCredits' to display the total credits
             document.querySelector(".totalCredits").innerText = creditTotal;
+            // This updates the inner HTML of the HTML class 'selection' to display the buttons for each course
             document.querySelector(".selection").innerHTML = html;
 
+            // I added these console logs to help debug the script
             console.log(className);
             console.log(creditTotal);
             console.log(filtered);
