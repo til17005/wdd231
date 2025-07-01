@@ -22,16 +22,13 @@
 
     .navigation ul {
         display: flex;
+    }
 
-        li {
-            flex: 1 1 100%;
-        }
+    .navigation li {
+        flex: 1 1 100%;
     }
 
     .navigation a {
         text-align: center;
     }
-
-
-
 }
