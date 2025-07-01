@@ -31,4 +31,26 @@
     .navigation a {
         text-align: center;
     }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 20px;
+    }
+
+    main h1 {
+        grid-column: 1 / 3;
+    }
+
+    main .about {
+        grid-column: 1 / 2;
+    }
+
+    main .photo {
+        grid-column: 2 / 3;
+    }
+
+    main .courses {
+        grid-column: 1 / 3;
+    }
 }
