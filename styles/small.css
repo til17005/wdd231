@@ -110,7 +110,7 @@ header span {
 
 .navigation a:hover {
     background-color: var(--accent-color1);
-    color: var(--primary-color);
+    color: white;
 }
 
 .navigation a.wayfinder {
