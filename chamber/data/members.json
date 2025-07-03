@@ -1,0 +1,94 @@
+{
+    "companies": [
+        {
+            "name": "Microsoft",
+            "address": "One Microsoft Way, Redmond, WA 98052, USA",
+            "phone": "1(800)642-7676",
+            "website": "https://www.microsoft.com",
+            "icon": "images/microsoft.ico",
+            "member-level": 3,
+            "description": "Microsoft Corporation is an American multinational technology company that produces computer software, consumer electronics, personal computers, and related services."
+        },
+        {
+            "name": "Amazon",
+            "address": "410 Terry Ave N, Seattle, WA 98109, USA",
+            "phone": "1(206)266-1000",
+            "website": "https://www.amazon.com",
+            "icon": "images/amazon.ico",
+            "member-level": 2,
+            "description": "Amazon.com, Inc. is an American multinational technology company that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence."
+        },
+        {
+            "name": "Google",
+            "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
+            "phone": "1(650)253-0000",
+            "website": "https://www.google.com",
+            "icon": "images/google.ico",
+            "member-level": 3,
+            "description": "Google LLC is an American multinational conglomerate specializing in various internet-related services and products."
+        },
+        {
+            "name": "Apple",
+            "address": "1 Apple Park Way, Cupertino, CA 95014, USA",
+            "phone": "1(408)996-1010",
+            "website": "https://www.apple.com",
+            "icon": "images/apple.ico",
+            "member-level": 1,
+            "description": "Apple Inc. is an American multinational technology company that designs, manufactures, and markets consumer electronics, computer software, and online services."
+        },
+        {
+            "name": "Facebook",
+            "address": "1 Hacker Way, Menlo Park, CA 94025, USA",
+            "phone": "1(650)543-4800",
+            "website": "https://www.facebook.com",
+            "icon": "images/facebook.ico",
+            "member-level": 3,
+            "description": "Facebook, Inc. is an American online social media and social networking service company."
+        },
+        {
+            "name": "Twitter",
+            "address": "1355 Market St #900, San Francisco, CA 94103, USA",
+            "phone": "1(415)222-9670",
+            "website": "https://www.twitter.com",
+            "icon": "images/twitter.ico",
+            "member-level": 2,
+            "description": "Twitter, Inc. is an American social media company that is known for its microblogging platform."
+        },
+        {
+            "name": "Netflix",
+            "address": "100 Winchester Circle, Los Gatos, CA 95032, USA",
+            "phone": "1(408)540-3700",
+            "website": "https://www.netflix.com",
+            "icon": "images/netflix.ico",
+            "member-level": 1,
+            "description": "Netflix, Inc. is an American subscription-based streaming service that offers online streaming of a library of films and television series."
+        },  
+        {
+            "name": "Adobe",
+            "address": "345 Park Ave, San Jose, CA 95110, USA",
+            "phone": "1(408)536-6000",
+            "website": "https://www.adobe.com",
+            "icon": "images/adobe.ico",
+            "member-level": 2,
+            "description": "Adobe Inc. is an American multinational computer software company known for its Adobe Flash web software ecosystem, Photoshop image editing software, and Adobe Acrobat Reader."
+        },
+        {
+            "name": "IBM",
+            "address": "1 New Orchard Rd, Armonk, NY 10504, USA",
+            "phone": "1(914)499-1900",
+            "website": "https://www.ibm.com",
+            "icon": "images/ibm.ico",
+            "member-level": 3,
+            "description": "International Business Machines Corporation (IBM) is an American multinational technology and consulting company."
+        },
+        {
+            "name": "Oracle",
+            "address": "500 Oracle Parkway, Redwood Shores, CA 94065, USA",
+            "phone": "1(650)506-7000",
+            "website": "https://www.oracle.com",
+            "icon": "images/oracle.ico",
+            "member-level": 2,
+            "description": "Oracle Corporation is an American multinational computer technology corporation that offers software, cloud solutions, and hardware products."
+        }
+    ]  
+}

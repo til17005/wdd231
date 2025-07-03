@@ -9,7 +9,8 @@
     <meta name="author" content="Matthew Tilton">
 
     <meta property="og:title" content="WDD 231: Web Frontend Developement 1 - Matthew M. Tilton - Chamber Project">
-    <meta property="og:description" content="WDD 231: Web Frontend Developement 1 - Chamber Project for Matthew M. Tilton">
+    <meta property="og:description"
+        content="WDD 231: Web Frontend Developement 1 - Chamber Project for Matthew M. Tilton">
     <meta property="og:url" content="https://til17005.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="https://til17005.github.io/wdd231/images/profile.webp">
 
@@ -25,37 +26,56 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <script src="scripts/nav.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/members.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/grill.svg" alt="Site Logo" width="1" height="1">
-        <span>Matthew M. Tilton</span>
-        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <img class="site-logo" src="images/commerce.svg" alt="Site Logo" width="1" height="1">
+        <div class="site-title">
+            <span>Lyrian</span>
+            <p>Chamber of Commerce</p>
+        </div>
+        <div class="ico-nav">
+            <img src="images/half-circle.svg" alt="Half circle" width="1" height="1">
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="chamber.html">Chamber Project</a></li>
-            <li><a href="final.html">Final Project</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Place holder - Chamber Project</h1>
+        <h1>Chamber Directory</h1>
+        <div id="cards"></div>
     </main>
     <footer>
+        <div>
+            <p class="title">Lyrian Chamber of Commerce</p>
+            <p>555 Lyrian Circle</p>
+            <p>Trensicourt, Lyrian 4972</p>
+            <p><a href="mailto:info@lyrianchamber.com">info@lyrianchamber.com</a></p>
+            <p>Phone: 555-555-5555</p>
+        </div>
         <div class="social">
             <a href="https://github.com/til17005"><img src="images/github.svg" alt="My github" width="1" height="1"></a>
-            <a href="https://www.linkedin.com/in/matthew-tilton-249a15/"><img src="images/linkedin.svg" alt="My LinkedIn"
-                    width="1" height="1"></a>
+            <a href="https://www.linkedin.com/in/matthew-tilton-249a15/"><img src="images/linkedin.svg"
+                    alt="My LinkedIn" width="1" height="1"></a>
             <a href="https://www.facebook.com/matthew.tilton.2025/"><img src="images/facebook.svg" alt="My facebook"
                     width="1" height="1"></a>
         </div>
-        <p>&copy; <span id="currentyear"></span> | Matthew Tilton | Utah</p>
-        <p id="lastModified"></p>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Matthew Tilton</p>
+            <p>&copy; <span id="currentyear"></span> Lyrian Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
-    </body>
-    
-    </html>
+</body>
+
+</html>
