@@ -1,0 +1,109 @@
+:root {
+    /* Fonts */
+    --heading-font: 'Rock Salt', 'Fuzzy Bubbles', Helvetica, sans-serif;
+    --standard-font: 'Montserrat', Helvetica, sans-serif;
+
+    /* Colors */
+    --primary-color: #CFCFEA;
+    --secondary-color: #A89B9D;
+    --text-color: #2A2C24;
+    --accent-color1: #816C61;
+    --accent-color2: #575A4B;
+    --black: #000000;
+}
+
+/********* Wild card settings *********/
+* {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--standard-font);
+}
+
+/********* Font *********/
+.rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.fuzzy-bubbles-regular {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fuzzy-bubbles-bold {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/********* Main *********/
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+}
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-shadow: -2px 2px 7px var(--accent-color2);
+}
+
+div#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1em;
+    padding: 1em;
+}
+
+section {
+    background-color: var(--secondary-color);
+    color: black;
+    margin: 1em 1em;
+    padding: 1rem;
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+    text-shadow: -2px 2px 7px var(--accent-color2);
+}
+
+section p {
+    font-family: var(--standard-font);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 2em;
+    box-shadow: -2px 2px 7px var(--accent-color2);
+}
+
+/********* Footer *********/
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    font-family: var(--standard-font);
+    margin: 0.5em 0;
+}
