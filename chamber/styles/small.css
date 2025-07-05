@@ -34,8 +34,8 @@ header {
 
 header img.site-logo {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 64px;
+    height: 64px;
     padding-bottom: .5em;
 }
 
