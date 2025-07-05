@@ -3,7 +3,7 @@
         {
             "name": "Microsoft",
             "address": "One Microsoft Way, Redmond, WA 98052, USA",
-            "phone": "1(800)642-7676",
+            "phone": "(800)642-7676",
             "website": "https://www.microsoft.com",
             "icon": "images/microsoft.ico",
             "member-level": 3,
@@ -12,7 +12,7 @@
         {
             "name": "Amazon",
             "address": "410 Terry Ave N, Seattle, WA 98109, USA",
-            "phone": "1(206)266-1000",
+            "phone": "(206)266-1000",
             "website": "https://www.amazon.com",
             "icon": "images/amazon.ico",
             "member-level": 2,
@@ -21,7 +21,7 @@
         {
             "name": "Google",
             "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
-            "phone": "1(650)253-0000",
+            "phone": "(650)253-0000",
             "website": "https://www.google.com",
             "icon": "images/google.ico",
             "member-level": 3,
@@ -30,7 +30,7 @@
         {
             "name": "Apple",
             "address": "1 Apple Park Way, Cupertino, CA 95014, USA",
-            "phone": "1(408)996-1010",
+            "phone": "(408)996-1010",
             "website": "https://www.apple.com",
             "icon": "images/apple.ico",
             "member-level": 1,
@@ -39,7 +39,7 @@
         {
             "name": "Facebook",
             "address": "1 Hacker Way, Menlo Park, CA 94025, USA",
-            "phone": "1(650)543-4800",
+            "phone": "(650)543-4800",
             "website": "https://www.facebook.com",
             "icon": "images/facebook.ico",
             "member-level": 3,
@@ -48,7 +48,7 @@
         {
             "name": "Twitter",
             "address": "1355 Market St #900, San Francisco, CA 94103, USA",
-            "phone": "1(415)222-9670",
+            "phone": "(415)222-9670",
             "website": "https://www.twitter.com",
             "icon": "images/twitter.ico",
             "member-level": 2,
@@ -57,7 +57,7 @@
         {
             "name": "Netflix",
             "address": "100 Winchester Circle, Los Gatos, CA 95032, USA",
-            "phone": "1(408)540-3700",
+            "phone": "(408)540-3700",
             "website": "https://www.netflix.com",
             "icon": "images/netflix.ico",
             "member-level": 1,
@@ -66,7 +66,7 @@
         {
             "name": "Adobe",
             "address": "345 Park Ave, San Jose, CA 95110, USA",
-            "phone": "1(408)536-6000",
+            "phone": "(408)536-6000",
             "website": "https://www.adobe.com",
             "icon": "images/adobe.ico",
             "member-level": 2,
@@ -75,7 +75,7 @@
         {
             "name": "IBM",
             "address": "1 New Orchard Rd, Armonk, NY 10504, USA",
-            "phone": "1(914)499-1900",
+            "phone": "(914)499-1900",
             "website": "https://www.ibm.com",
             "icon": "images/ibm.ico",
             "member-level": 3,
@@ -84,7 +84,7 @@
         {
             "name": "Oracle",
             "address": "500 Oracle Parkway, Redwood Shores, CA 94065, USA",
-            "phone": "1(650)506-7000",
+            "phone": "(650)506-7000",
             "website": "https://www.oracle.com",
             "icon": "images/oracle.ico",
             "member-level": 2,

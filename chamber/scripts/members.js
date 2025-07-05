@@ -18,7 +18,7 @@ const displayMembers = (members) => {
         const div = document.createElement('div');
         const name = document.createElement('h2');
         const address = document.createElement('p');
-        const phone = document.createElement('p');
+        const phone = document.createElement('a');
         const website = document.createElement('a');
         const icon = document.createElement('img');
 
@@ -26,6 +26,8 @@ const displayMembers = (members) => {
         div.setAttribute('class', 'company-name');
         address.textContent = `${member.address}`;
         phone.textContent = `${member.phone}`;
+        phone.setAttribute('href', `tel:${member.phone}`);
+        phone.setAttribute('class', 'phone');        
         website.textContent = `${member.website}`;
         website.setAttribute('href', member.website);
         website.setAttribute('target', '_blank');
@@ -48,3 +50,21 @@ const displayMembers = (members) => {
 }
 
 getMemberData();
+
+
+/**** Adjust View ****/
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const display = document.querySelector("#cards");
+
+gridButton.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listButton.addEventListener("click", showList);
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}
