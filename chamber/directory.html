@@ -12,13 +12,15 @@
     <meta property="og:description"
         content="WDD 231: Web Frontend Developement 1 - Chamber Project for Matthew M. Tilton">
     <meta property="og:url" content="https://til17005.github.io/wdd231/chamber/directory.html">
-    <meta property="og:image" content="https://til17005.github.io/wdd231/images/profile.webp">
+    <meta property="og:image" content="https://til17005.github.io/wdd231/images/commerce.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
         rel="stylesheet">
+
+    <link rel="preload" href="data/members.json" as="fetch" type="application/json" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -32,13 +34,13 @@
 
 <body>
     <header>
-        <img class="site-logo" src="images/commerce.svg" alt="Site Logo" width="1" height="1">
+        <img class="site-logo" src="images/commerce.svg" alt="Site Logo" width="32" height="32">
         <div class="site-title">
             <span>Lyrian</span>
             <p>Chamber of Commerce</p>
         </div>
         <div class="ico-nav">
-            <img src="images/half-circle.svg" alt="Half circle" width="1" height="1">
+            <img src="images/half-circle.svg" alt="Half circle" width="32" height="32">
             <button id="nav-button" class="hamburger" aria-label="navigation"></button>
         </div>
         <nav id="nav-bar" class="navigation">
@@ -54,8 +56,8 @@
     <main>
         <h1>Chamber Directory</h1>
         <div class="view">
-            <button id="grid"><img src="images/grid.svg" alt="Grid view" width="1" height="1"></button>
-            <button id="list"><img src="images/list.svg" alt="List view" width="1" height="1"></button>
+            <button id="grid"><img src="images/grid.svg" alt="Grid view" width="32" height="32"></button>
+            <button id="list"><img src="images/list.svg" alt="List view" width="32" height="32"></button>
         </div>
         <div class="grid" id="cards"></div>
     </main>
@@ -69,11 +71,11 @@
             <p><a href="tel:phone:555-555-5555">(555)555-5555</a></p>
         </div>
         <div class="social">
-            <a href="https://github.com/til17005"><img src="images/github.svg" alt="My github" width="1" height="1"></a>
+            <a href="https://github.com/til17005"><img src="images/github.svg" alt="My github" width="32" height="32"></a>
             <a href="https://www.linkedin.com/in/matthew-tilton-249a15/"><img src="images/linkedin.svg"
-                    alt="My LinkedIn" width="1" height="1"></a>
+                    alt="My LinkedIn" width="32" height="32"></a>
             <a href="https://www.facebook.com/matthew.tilton.2025/"><img src="images/facebook.svg" alt="My facebook"
-                    width="1" height="1"></a>
+                width="32" height="32"></a>
         </div>
         <div>
             <p>WDD231 Class Project</p>

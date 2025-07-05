@@ -17,7 +17,7 @@
     }
 
     .hamburger {
-        display: none;
+        visibility: hidden;
     }
 
     .navigation {
@@ -29,6 +29,7 @@
 
     .navigation ul {
         display: flex;
+        flex-wrap: nowrap;
     }
 
     .navigation li {
