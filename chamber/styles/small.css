@@ -34,8 +34,8 @@ header {
 
 header img.site-logo {
     display: block;
-    width: 64px;
-    height: 64px;
+    width: 100%;
+    height: auto;
     padding-bottom: .5em;
 }
 
@@ -167,7 +167,7 @@ div.company-name {
 }
 
 .grid section {
-    min-height: 150px;
+    min-height: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
