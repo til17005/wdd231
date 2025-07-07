@@ -12,7 +12,6 @@
         display: grid;
         grid-template-columns: 24px .5fr 1fr 50px;
         grid-template-rows: 1fr;
-        margin-top: 1em;
         align-items: center;
     }
 
