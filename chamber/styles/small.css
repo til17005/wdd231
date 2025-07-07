@@ -46,7 +46,7 @@ header span {
 header p {
     font-size: 0.8rem;
     font-family: var(--standard-font);
-    color: var(--text-color);
+    color: var(--black);
 }
 
 header .ico-nav {
@@ -99,7 +99,7 @@ header .ico-nav img {
     display: block;
     text-decoration: none;
     padding: .8rem 10px;
-    color: var(--text-color);
+    color: var(--black);
 }
 
 .navigation a:hover {
@@ -108,7 +108,7 @@ header .ico-nav img {
 }
 
 .navigation a.wayfinder {
-    color: var(--text-color);
+    color: var(--black);
     font-weight: bold;
     text-shadow: 2px 2px 3px var(--accent-color1);
 }
@@ -221,6 +221,10 @@ footer p {
 
 footer p.title {
     font-weight: bold;
+}
+
+footer a {
+    color: var(--black);
 }
 
 .social {
