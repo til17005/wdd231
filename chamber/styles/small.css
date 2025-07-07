@@ -1,5 +1,6 @@
 :root {
     /* Fonts */
+    --heading-font: 'Rock Salt', Helvetica, sans-serif;
     --standard-font: 'Montserrat', Helvetica, sans-serif;
 
     /* Colors */
@@ -39,13 +40,12 @@ header img.site-logo {
 
 header span {
     font-size: 1.2rem;
-    font-family: var(--standard-font);
     color: black;
+    font-family: var(--heading-font);
 }
 
 header p {
     font-size: 0.8rem;
-    font-family: var(--standard-font);
     color: var(--black);
 }
 
@@ -120,7 +120,7 @@ main {
 
 h1,
 h2 {
-    font-family: var(--standard-font);
+    font-family: var(--heading-font);
 }
 
 h1 {
