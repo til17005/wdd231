@@ -1,7 +1,7 @@
 :root {
     /* Fonts */
-    --heading-font: 'Rock Salt', Helvetica, sans-serif;
-    --standard-font: 'Montserrat', Helvetica, sans-serif;
+    --heading-font: 'Rock Salt', cursive, sans-serif;
+    --standard-font: 'Montserrat', sans-serif;
 
     /* Colors */
     --primary-color: #FEF6C9;
@@ -33,9 +33,10 @@ header {
 
 header img.site-logo {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 32px;
+    height: 32px;
     padding-bottom: .5em;
+    margin: 8px -3px 6px;
 }
 
 header span {
@@ -165,7 +166,7 @@ div.company-name {
 }
 
 .grid section {
-    min-height: 10px;
+    min-height: 133px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,7 +210,7 @@ footer {
     padding: 1rem 10px;
     text-align: center;
     color: black;
-    min-height: 200px;
+    min-height: 276px;
 }
 
 footer p {
