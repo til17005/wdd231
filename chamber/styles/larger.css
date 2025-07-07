@@ -47,6 +47,16 @@
         grid-column: 4;
     }
 
+    main .hero {
+        width: 90%;
+        height: auto;
+    }
+
+    /********* Grid View *********/
+    .grid section {
+        max-width: 75%;
+    }
+
     /********* List View *********/
     .list section {
         display: grid;
@@ -61,5 +71,16 @@
 
     .list section .phone {
         justify-content: left;
+    }
+
+    /********* Footer *********/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer .contact,
+    footer .copyright {
+        text-align: left;
     }
 }
