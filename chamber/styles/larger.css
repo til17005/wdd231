@@ -8,6 +8,7 @@
         margin: 0 auto;
     }
 
+    /********* Header *********/
     header {
         display: grid;
         grid-template-columns: 24px .5fr 1fr 50px;
@@ -15,10 +16,12 @@
         align-items: center;
     }
 
+    /********* Hamburger *********/
     .hamburger {
         visibility: hidden;
     }
 
+    /********* Navigation *********/
     .navigation {
         display: block;
         margin: 0;
@@ -44,6 +47,7 @@
         grid-column: 4;
     }
 
+    /********* List View *********/
     .list section {
         display: grid;
         grid-template-columns: .5fr 2fr .7fr 1.3fr;
