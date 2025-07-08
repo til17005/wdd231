@@ -47,10 +47,21 @@
         grid-column: 4;
     }
 
+    /********* Main *********/
+
     main .hero {
-        width: 90%;
+        width: 95%;
         height: auto;
     }
+
+    main .local-content {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: .5em;
+        margin: 1em auto;
+    }
+
 
     /********* Grid View *********/
     .grid section {

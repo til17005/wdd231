@@ -154,33 +154,63 @@ main .keynote {
 }
 
 main .home {
-    max-width: 80%;
+    max-width: 95%;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.75rem;
     color: var(--black);
-    margin: 1em auto;
+    margin: .5em auto;
 }
 
-main .local-content {
-    width: 80%;
+main .local-content,
+main .business-cards {
+    width: 95%;
     margin: 0 auto;
 }
 
 main .local-content section {
     box-shadow: -1px 2px 20px var(--text-color);
+    background-color: var(--primary-color);
 }
 
-main .local-content h2{
+main .local-content h2 {
     background-color: var(--accent-color2);
     color: var(--secondary-color);
     margin: 0 auto;
 }
 
-main .local-content section div {
+main .local-content section .current {
     margin: 0 auto;
-    margin-bottom: 1em;
-    padding: 10px;
-    background-color: var(--primary-color);
+    padding: 5px;   
+}
+
+main .local-content section div .weather-card {
+    max-width: 210px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.weather-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.weather-container {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.weather-container p {
+    padding: 3px;
+    font-size: .8em;
+}
+
+
+main .business-cards {
+    /* place holder for business cards */
+    display: grid;
 }
 
 main .view {

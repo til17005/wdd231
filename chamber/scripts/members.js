@@ -4,6 +4,7 @@
 const url = 'data/members.json';
 // Select the cards container where member data will be displayed
 const cards = document.querySelector('#cards');
+const businessCards = document.querySelector('.business-cards');
 
 // Get (fetch) member data from my JSON file and display it using the displayMembers function below
 const getMemberData = async () => {
