@@ -6,8 +6,10 @@
             "phone": "(800)642-7676",
             "website": "https://www.microsoft.com",
             "icon": "images/microsoft.ico",
-            "member-level": 3,
-            "description": "Microsoft Corporation is an American multinational technology company that produces computer software, consumer electronics, personal computers, and related services."
+            "member_level": 3,
+            "description": "Microsoft Corporation is an American multinational technology company that produces computer software, consumer electronics, personal computers, and related services.",
+            "tag_line": "Empowering every person and every organization on the planet to achieve more.",
+            "email": "example@microsoft.com"
         },
         {
             "name": "Amazon",
@@ -15,8 +17,10 @@
             "phone": "(206)266-1000",
             "website": "https://www.amazon.com",
             "icon": "images/amazon.ico",
-            "member-level": 2,
-            "description": "Amazon.com, Inc. is an American multinational technology company that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence."
+            "member_level": 2,
+            "description": "Amazon.com, Inc. is an American multinational technology company that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+            "tag_line": "From A to Z — everything you need, delivered.",
+            "email": "example@amazon.com"
         },
         {
             "name": "Google",
@@ -24,8 +28,10 @@
             "phone": "(650)253-0000",
             "website": "https://www.google.com",
             "icon": "images/google.ico",
-            "member-level": 3,
-            "description": "Google LLC is an American multinational conglomerate specializing in various internet-related services and products."
+            "member_level": 3,
+            "description": "Google LLC is an American multinational conglomerate specializing in various internet-related services and products.",
+            "tag_line": "Organizing the world's information, one search at a time.",
+            "email": "example@google.com"
         },
         {
             "name": "Apple",
@@ -33,8 +39,10 @@
             "phone": "(408)996-1010",
             "website": "https://www.apple.com",
             "icon": "images/apple.ico",
-            "member-level": 1,
-            "description": "Apple Inc. is an American multinational technology company that designs, manufactures, and markets consumer electronics, computer software, and online services."
+            "member_level": 1,
+            "description": "Apple Inc. is an American multinational technology company that designs, manufactures, and markets consumer electronics, computer software, and online services.",
+            "tag_line": "Think different. Live beautifully.",
+            "email": "example@apple.com"
         },
         {
             "name": "Facebook",
@@ -42,8 +50,10 @@
             "phone": "(650)543-4800",
             "website": "https://www.facebook.com",
             "icon": "images/facebook.ico",
-            "member-level": 3,
-            "description": "Facebook, Inc. is an American online social media and social networking service company."
+            "member_level": 3,
+            "description": "Facebook, Inc. is an American online social media and social networking service company.",
+            "tag_line": "Connecting the world, one friend at a time.",
+            "email": "example@facebook.com"
         },
         {
             "name": "Twitter",
@@ -51,8 +61,10 @@
             "phone": "(415)222-9670",
             "website": "https://www.twitter.com",
             "icon": "images/twitter.ico",
-            "member-level": 2,
-            "description": "Twitter, Inc. is an American social media company that is known for its microblogging platform."
+            "member_level": 2,
+            "description": "Twitter, Inc. is an American social media company that is known for its microblogging platform.",
+            "tag_line": "What’s happening — in real time.",
+            "email": "example@twitter.com"
         },
         {
             "name": "Netflix",
@@ -60,8 +72,10 @@
             "phone": "(408)540-3700",
             "website": "https://www.netflix.com",
             "icon": "images/netflix.ico",
-            "member-level": 1,
-            "description": "Netflix, Inc. is an American subscription-based streaming service that offers online streaming of a library of films and television series."
+            "member_level": 1,
+            "description": "Netflix, Inc. is an American subscription-based streaming service that offers online streaming of a library of films and television series.",
+            "tag_line": "Watch anywhere. Cancel anytime. Endless entertainment.",
+            "email": "example@netflix.com"
         },  
         {
             "name": "Adobe",
@@ -69,8 +83,10 @@
             "phone": "(408)536-6000",
             "website": "https://www.adobe.com",
             "icon": "images/adobe.ico",
-            "member-level": 2,
-            "description": "Adobe Inc. is an American multinational computer software company known for its Adobe Flash web software ecosystem, Photoshop image editing software, and Adobe Acrobat Reader."
+            "member_level": 2,
+            "description": "Adobe Inc. is an American multinational computer software company known for its Adobe Flash web software ecosystem, Photoshop image editing software, and Adobe Acrobat Reader.",
+            "tag_line": "Creativity for all.",
+            "email": "example@adobe.com"
         },
         {
             "name": "IBM",
@@ -78,8 +94,10 @@
             "phone": "(914)499-1900",
             "website": "https://www.ibm.com",
             "icon": "images/ibm.ico",
-            "member-level": 3,
-            "description": "International Business Machines Corporation (IBM) is an American multinational technology and consulting company."
+            "member_level": 1,
+            "description": "International Business Machines Corporation (IBM) is an American multinational technology and consulting company.",
+            "tag_line": "Building a smarter planet.",
+            "email": "example@ibm.com"
         },
         {
             "name": "Oracle",
@@ -87,8 +105,10 @@
             "phone": "(650)506-7000",
             "website": "https://www.oracle.com",
             "icon": "images/oracle.ico",
-            "member-level": 2,
-            "description": "Oracle Corporation is an American multinational computer technology corporation that offers software, cloud solutions, and hardware products."
+            "member_level": 2,
+            "description": "Oracle Corporation is an American multinational computer technology corporation that offers software, cloud solutions, and hardware products.",
+            "tag_line": "Data-driven innovation for the modern enterprise.",
+            "email": "example@oracle.com"
         }
     ]  
 }

@@ -59,7 +59,19 @@
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         gap: .5em;
-        margin: 1em auto;
+        margin: 0 auto;
+    }
+
+    /********* Business Mebers (Home page) *********/
+    main .business-cards {
+        max-width: 900px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main .business-cards section {
+        max-width: 260px;
+        margin: 1em;
     }
 
 

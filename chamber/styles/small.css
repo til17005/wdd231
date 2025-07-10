@@ -134,6 +134,7 @@ h2 {
     padding: 10px;
 }
 
+/********* Main Home *********/
 main .hero {
     position: relative;
     max-width: 100%;
@@ -170,17 +171,17 @@ main .business-cards {
 main .local-content section {
     box-shadow: -1px 2px 20px var(--text-color);
     background-color: var(--primary-color);
+    margin: 1em 0 1em 0;
 }
 
 main .local-content h2 {
-    background-color: var(--accent-color2);
-    color: var(--secondary-color);
+    background-color: var(--accent-color1);
     margin: 0 auto;
 }
 
 main .local-content section .current {
     margin: 0 auto;
-    padding: 5px;   
+    padding: 5px;
 }
 
 main .local-content section div .weather-card {
@@ -220,12 +221,51 @@ main .local-content section div .weather-card {
     font-weight: bold;
 }
 
-
 main .business-cards {
-    /* place holder for business cards */
-    display: grid;
+    margin-top: 1em;
 }
 
+main .business-cards section {
+    border-radius: 2em;
+    box-shadow: -1px 2px 20px var(--text-color);
+    background-color: var(--primary-color);
+    margin: 1em 0 1em 0;
+}
+
+main .business-cards section h2 {
+    margin-top: 1em;
+    text-align: center;
+}
+
+main .business-cards section p {
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: .7em;
+}
+
+main .business-cards section div {
+    border-top: 2px solid var(--black);
+    display: grid;
+    grid-template-columns: 15% 85%;
+    column-gap: 2.5em;
+}
+
+main .business-cards section div img {
+    width: 64px;
+    height: 64px;
+    margin: 1em;
+    grid-column: 1;
+    grid-row: 1/4;
+}
+
+main .business-cards section div a {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0 0 1em;
+    font-size: .7em;
+}
+
+/********* Main Directory *********/
 main .view {
     display: flex;
     justify-content: center;
