@@ -207,6 +207,19 @@ main .local-content section div .weather-card {
     font-size: .8em;
 }
 
+.forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.forecast span {
+    font-weight: bold;
+}
+
 
 main .business-cards {
     /* place holder for business cards */
