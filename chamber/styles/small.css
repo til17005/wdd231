@@ -137,8 +137,12 @@ h2 {
 /********* Main Home *********/
 main .hero {
     position: relative;
-    max-width: 100%;
     margin: 0 auto;
+}
+
+main .hero img {
+    max-width: 100%;
+    height: auto;
 }
 
 main .keynote {
