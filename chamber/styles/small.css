@@ -238,7 +238,7 @@ main .business-cards section h2 {
 }
 
 main .business-cards section p {
-    margin-bottom: 1em;
+    margin: 0 1em 1em 1em;
     text-align: center;
     font-size: .7em;
 }
