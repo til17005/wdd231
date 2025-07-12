@@ -5,8 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231: Web Frontend Developement 1 - Matthew M. Tilton</title>
-    <meta name="description" content="WDD 231: Web Frontend Developement 1 - Matthew M. Tilton">
+    <meta name="description" content="WDD 231: Web Frontend Developement 1 - Final Project home page for Matthew M. Tilton">
     <meta name="author" content="Matthew Tilton">
+
+    <meta property="og:title" content="WDD 231: Web Frontend Developement 1 - Matthew M. Tilton">
+    <meta property="og:description"
+        content="WDD 231: Web Frontend Developement 1 - Final Project home page for Matthew M. Tilton">
+    <meta property="og:url" content="https://til17005.github.io/wdd231/final/">
+    <meta property="og:image" content="https://til17005.github.io/wdd231/final/images/profile.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,37 +26,41 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <script src="scripts/nav.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/grill.svg" alt="Site Logo" width="1" height="1">
+        <img src="images/disc-golf-basket.svg" alt="Site Logo" width="1" height="1">
         <span>Matthew M. Tilton</span>
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="chamber.html">Chamber Project</a></li>
-            <li><a href="final.html">Final Project</a></li>
+            <li><a href="discs.html">Discs</a></li>
+            <li><a href="locate.html">Locations</a></li>
+            <li><a href="subscribe.html">Newsletter</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Place holder - Final Project</h1>
+        <div class="hero">
+            <img src="images/hero.webp" alt="Disc golf basket sourounded by trees" width="900" height="300">
+            <button class="newsletter">Newsletter</button>
+        </div>
+        
     </main>
     <footer>
         <div class="social">
             <a href="https://github.com/til17005"><img src="images/github.svg" alt="My github" width="1" height="1"></a>
-            <a href="https://www.linkedin.com/in/matthew-tilton-249a15/"><img src="images/linkedin.svg" alt="My LinkedIn"
-                    width="1" height="1"></a>
+            <a href="https://www.linkedin.com/in/matthew-tilton-249a15/"><img src="images/linkedin.svg"
+                    alt="My LinkedIn" width="1" height="1"></a>
             <a href="https://www.facebook.com/matthew.tilton.2025/"><img src="images/facebook.svg" alt="My facebook"
                     width="1" height="1"></a>
         </div>
         <p>&copy; <span id="currentyear"></span> | Matthew Tilton | Utah</p>
         <p id="lastModified"></p>
     </footer>
-    </body>
-    
-    </html>
+</body>
+
+</html>
