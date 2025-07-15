@@ -86,7 +86,7 @@ const courses = [
 // This added event listener waits for the DOM to be fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', () => {
     // This selects all buttons in the document and adds a click event listener to each button
-    document.querySelectorAll('button').forEach(button => {
+    document.querySelectorAll('.buttons button').forEach(button => {
         // When a button is clicked, it retrieves the class name of the button
         button.addEventListener('click', () => {
             // Variable to hold the class name of the clicked button
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Each button displays the course subject and number, and has an HTML id set to the course
             // CSS will use the value of the completed property to style the button and will add a checkmark if completed
             const html = filtered.map(course =>
-                `<button id="${course.completed}">${course.subject} ${course.number}</button>`).join("");
+                `<button class="${course.subject}${course.number}" id="${course.completed}">${course.subject} ${course.number}</button>`).join("");
             
             // This updates the inner text of the HTML class 'totalCredits' to display the total credits
             document.querySelector(".totalCredits").innerText = creditTotal;
@@ -127,39 +127,59 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector(".selection").innerHTML = html;
 
             // I added these console logs to help debug the script
-            //console.log(className);
+           //console.log(className);
             //console.log(creditTotal);
             //console.log(filtered);
+
+            // Getting this part to work this way seemed much more difficult than I thought it whould be. I think I'm missing sothing in my understanding.
+            // It works and I get how and why, but it seems there should have been a more simple way to do it. It most likely has to do with how I did 
+            // the original half of the assingment for the home page.
+
+            // This selects all buttons in the document and adds a click event listener to each button
+            document.querySelectorAll('.selection button').forEach(button => {
+                // When a button is clicked, it retrieves the class name of the button
+                button.addEventListener('click', () => {
+                    // Variable to hold the class name of the clicked button
+                    const className = button.className;
+                    //console.log(className);
+
+                    // Split class name into subject and number
+                    const getCourse = className.match(/^([A-Za-z]+)(\d+)$/);
+                    
+                    if (getCourse) {
+                        const subject = getCourse[1];
+                        const courseNumber = getCourse[2];
+                        //console.log(subject, courseNumber);
+
+                        filtered = courses.filter(course =>
+                            course.subject == subject && course.number == courseNumber);
+                        
+                        console.log(filtered);
+
+                        const courseDetails = document.getElementById('course-details');
+
+                        function displayCourseDetails(course) {
+                            courseDetails.innerHTML = '';
+                            courseDetails.innerHTML = `
+                                <button id="closeModal">❌</button>
+                                <h2>${course.subject} ${course.number}</h2>
+                                <h3>${course.title}</h3>
+                                <p><strong>Credits</strong>: ${course.credits}</p>
+                                <p><strong>Certificate</strong>: ${course.certificate}</p>
+                                <p>${course.description}</p>
+                                <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+                            `;
+                            courseDetails.showModal();
+                        
+                            closeModal.addEventListener("click", () => {
+                                courseDetails.close();
+                            });    
+                        }
+                            
+                        displayCourseDetails(filtered[0]);                       
+                    }
+                });
+            });
         });
-    });
+    });  
 });
-
-/*
-const courseDetails = document.getElementById('course-details');
-const courseDiv = document.createElement('div');
-
-
-
-function displayCourseDetails(course) {
-    courseDetails.innerHTML = '';
-    courseDetails.innerHTML = `
-		<button id="closeModal">❌</button>
-        <h2>${course.subject} ${course.number}</h2>
-        <h3>${course.title}</h3>
-        <p><strong>Credits</strong>: ${course.credits}</p>
-        <p><strong>Certificate</strong>: ${course.certificate}</p>
-        <p>${course.description}</p>
-        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
-    `;
-    courseDetails.showModal();
-  
-    closeModal.addEventListener("click", () => {
-        courseDetails.close();
-    });    
-}
-
-courseDiv.addEventListener('click', () => {
-    displayCourseDetails(course);
-});
-
-*/
