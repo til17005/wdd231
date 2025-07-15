@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         filtered = courses.filter(course =>
                             course.subject == subject && course.number == courseNumber);
                         
-                        console.log(filtered);
+                        //console.log(filtered);
 
                         const courseDetails = document.getElementById('course-details');
 
