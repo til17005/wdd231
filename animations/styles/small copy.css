@@ -1,0 +1,95 @@
+:root {
+    /* Fonts */
+    --heading-font: 'Rock Salt', 'Fuzzy Bubbles', Helvetica, sans-serif;
+    --standard-font: 'Montserrat', Helvetica, sans-serif;
+
+    /* Colors */
+    --primary-color: #CFCFEA;
+    --secondary-color: #A89B9D;
+    --text-color: #2A2C24;
+    --accent-color1: #816C61;
+    --accent-color2: #575A4B;
+    --black: #000000;
+}
+
+/********* Wild card settings *********/
+* {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--standard-font);
+}
+
+/********* Header *********/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 5px 10px 10px;
+    align-items: end;
+    border-bottom: 1px solid black;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    font-family: var(--heading-font);
+    color: black;
+}
+
+/********* Hamburger *********/
+.hamburger {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: none;
+    border: none;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/********* Navigation *********/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    padding: .8rem 10px;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--accent-color1);
+}
+
+.navigation a:hover {
+    background-color: var(--accent-color1);
+    color: white;
+}
+
+.navigation a.wayfinder {
+    color: var(--text-color);
+    font-weight: bold;
+    text-shadow: 2px 2px 3px var(--accent-color1);
+}
