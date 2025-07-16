@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231: Web Frontend Developement 1 - Matthew M. Tilton - Chamber Project</title>
+    <meta name="description" content="WDD 231: Web Frontend Developement 1 - Matthew M. Tilton - Chamber Project">
+    <meta name="author" content="Matthew Tilton">
+
+    <meta property="og:title" content="WDD 231: Web Frontend Developement 1 - Matthew M. Tilton - Chamber Project">
+    <meta property="og:description"
+        content="WDD 231: Web Frontend Developement 1 - Chamber Project for Matthew M. Tilton">
+    <meta property="og:url" content="https://til17005.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://til17005.github.io/wdd231/images/commerce.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="data/members.json" as="fetch" type="application/json" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/nav.js" defer></script>
+
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img class="site-logo" src="images/commerce.svg" alt="Site Logo" width="32" height="32">
+        <div class="site-title">
+            <span>Lyrian</span>
+            <p>Chamber of Commerce</p>
+        </div>
+        <div class="ico-nav">
+            <img src="images/half-circle.svg" alt="Half circle" width="28" height="28">
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p class="title">Lyrian Chamber of Commerce</p>
+            <p>555 Lyrian Circle</p>
+            <p>Trensicourt, Lyrian 4972</p>
+            <p><a href="mailto:info@lyrian.com" aria-label="Email the Lyrian Chamber of Commerce">info@lyriancoc.com</a>
+            </p>
+            <p><a href="tel:phone:555-555-5555">(555)555-5555</a></p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/til17005"><img src="images/github.svg" alt="My github" width="32"
+                    height="32"></a>
+            <a href="https://www.linkedin.com/in/matthew-tilton-249a15/"><img src="images/linkedin.svg"
+                    alt="My LinkedIn" width="32" height="32"></a>
+            <a href="https://www.facebook.com/matthew.tilton.2025/"><img src="images/facebook.svg" alt="My facebook"
+                    width="32" height="32"></a>
+        </div>
+        <div class="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Matthew Tilton</p>
+            <p>&copy; <span id="currentyear">Loading...</span> Lyrian Chamber of Commerce</p>
+            <p id="lastModified">Loading...</p>
+        </div>
+    </footer>
+</body>
+
+</html>
