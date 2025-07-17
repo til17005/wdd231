@@ -337,6 +337,112 @@ div.company-name {
     display: none;
 }
 
+/********* Main join.html *********/
+form {
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    animation: slidein 1s ease-in-out
+}
+
+@keyframes slidein {
+    0%,
+    100% {
+        transform: translate(0%, 0%) scale(.25);
+    }
+
+    100% {
+        transform: translate(0%, 0%) scale(1);
+    }
+}
+
+label {
+    display: block;
+    padding-top: .4em;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+select,
+textarea {
+    display: block;
+    margin: .3em 0 1em 0;
+    padding: .5em;
+    border: 1px solid var(--text-color);
+    border-radius: 1em;
+    border-left-width: .5em;
+    border-left-color: var(--accent-color2);
+    color: var(--black);
+    width: 300px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+input:required {
+    border-left-color: #ff0000;
+}
+
+input:focus {
+    border-left-color: var(--text-color);
+}
+
+input:required:valid {
+    border-left-color: #00FF00;
+}
+
+input[type=submit] {
+    text-align: center;
+    background-color: var(--accent-color2);
+    color: var(--primary-color);
+    border-radius: 1em;
+    padding: .5em;
+    margin: 1em 0;
+    font-size: 1.4em;
+    box-shadow: 3px 3px 8px var(--text-color);
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.memberships {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.memberships div {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color2);
+    border-radius: 0 1em;
+    width: 300px;
+    font-weight: 600;
+}
+
+.memberships div button {
+    margin-top: .5em;
+    padding: .25em;
+    background-color: var(--accent-color1);
+    color: var(--black);
+    box-shadow: -2px 2px 4px var(--text-color);
+}
+
+/********* Main results.html *********/
+.results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+}
+
 /********* Footer *********/
 footer {
     background-color: var(--secondary-color);

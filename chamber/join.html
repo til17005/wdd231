@@ -55,7 +55,50 @@
     </header>
 
     <main>
+        <h1>Become a member</h1>
         
+        <form method="GET" action="thankyou.html" class="thankyou">
+            <label>First Name<input type="text" name="first" title="Your first name" required autocomplete="given-name" title="Your First Name"></label>
+            <label>Last Name<input type="text" name="last" title="Your last name" required autocomplete="family-name" title="Your Last Name"></label>
+            <label>Organizational Title<input type="text" name="orgtitle" title="Your organizational title" required autocomplete="organization-title"></label>
+            <label>Email<input type="email" name="email" title="Your Email" required placeholder="alias@gmail.com" autocomplete="email"></label>
+            <label>Mobile Phone<input type="tel" name="phone" title="Your mobile number with dashes" autocomplete="tel"  placeholder="555-555-5555"></label>
+            <label>Organization Name<input type="text" name="orgname" title="Your organizations name" required autocomplete="organization"></label>
+            <label>Membership Level
+                <select id="membership" name="membership">
+                    <option value="" disabled selected>Please select an option</option>
+                    <option value="np">NP Membershop</option>
+                    <option value="bronze">Bronze Membershop</option>
+                    <option value="silver">Silver Membershop</option>
+                    <option value="Gold">Gold Membershop</option>
+                </select>
+            </label>
+            <label>Business/Organization Description<textarea name="description" id="description" title="Description of organization"></textarea></label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+        
+            <input type="submit" value="Become A Member">
+        </form>
+        <section class="memberships">
+            <h2>Membership Levels</h2>
+            <div>
+                <p>Non Profit Membership Level</p>
+                <button class="np">Learn More</button>
+            </div>
+            <div>
+                <p>Bronze Membership Level</p>
+                <button class="bronze">Learn More</button>
+            </div>
+            <div>
+                <p>Silver Membership Level</p>
+                <button class="silver">Learn More</button>
+            </div>
+            <div>
+                <p>Gold Membership Level</p>
+                <button class="gold">Learn More</button>
+            </div>
+            <dialog class="membershipModal"></dialog>
+        </section>  
     </main>
 
     <footer>
