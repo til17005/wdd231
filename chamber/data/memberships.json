@@ -1,53 +1,49 @@
 {
-    "membership": [
-        {
-            "id": "NP",
-            "name": "Non Profit Membership",
-            "cost": "$0",
-            "benefits": [
-                "Access to community resourses",
-                "Networking opportunities",
-                "Monthly newsletter"
-            ]
-        },
-        {
-            "id": "bronze",
-            "name": "Bronze Membership",
-            "cost": "$1000",
-            "benefits": [
-                "Access to community resourses",
-                "Networking opportunities",
-                "Resource Library",
-                "Monthly newsletter"
-            ]
-        },
-        {
-            "id": "silver",
-            "name": "Silver Membership",
-            "cost": "$2375",
-            "benefits": [
-                "Access to community resourses",
-                "Networking opportunities",
-                "Resource Library",
-                "Member badge",
-                "Recognition on website",
-                "Monthly newsletter"
-            ]
-        },
-        {
-            "id": "gold",
-            "name": "Gold Membership",
-            "cost": "$3795",
-            "benefits": [
-                "Access to community resourses",
-                "Annual strategy report",
-                " VIP lounge access at events",
-                "Networking opportunities",
-                "Resource Library",
-                "Member badge",
-                "Recognition on website",
-                "Monthly newsletter"
-            ]
-        }        
-    ]
+  "membership": {
+    "np": {
+      "name": "Non Profit Membership",
+      "cost": "$0",
+      "benefits": [
+        "Access to community resourses",
+        "Networking opportunities",
+        "Monthly newsletter"
+      ]
+    },
+    "bronze": {
+      "name": "Bronze Membership",
+      "cost": "$1000",
+      "benefits": [
+        "Access to community resourses",
+        "Networking opportunities",
+        "Resource Library",
+        "Monthly newsletter"
+      ]
+    },
+    "silver": {
+      "name": "Silver Membership",
+      "cost": "$2375",
+      "benefits": [
+        "Access to community resourses",
+        "Networking opportunities",
+        "Resource Library",
+        "Member badge",
+        "Recognition on website",
+        "Monthly newsletter"
+      ]
+    },
+    "gold": {
+      "name": "Gold Membership",
+      "cost": "$3795",
+      "benefits": [
+        "Access to community resourses",
+        "Annual strategy report",
+        " VIP lounge access at events",
+        "Networking opportunities",
+        "Resource Library",
+        "Member badge",
+        "Recognition on website",
+        "Monthly newsletter"
+      ]
+    }
+  }
 }

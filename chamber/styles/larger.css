@@ -62,7 +62,7 @@
         margin: 0 auto;
     }
 
-    /********* Business Mebers (Home page) *********/
+    /********* Main Business Members (Home page) *********/
     main .business-cards {
         max-width: 900px;
         display: flex;
@@ -95,6 +95,26 @@
     .list section .phone {
         justify-content: left;
     }
+
+    /********* Main join.html *********/
+    .join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .join h1 {
+        grid-column: 1/3;
+    }
+
+    .join section {
+        margin-top: 1.5em;
+    }
+
+    .join section form {
+        margin: .5em;
+    }
+
+
 
     /********* Footer *********/
     footer {

@@ -20,8 +20,6 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
         rel="stylesheet">
 
-    <link rel="preload" href="data/members.json" as="fetch" type="application/json" crossorigin="anonymous">
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -29,7 +27,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <script src="scripts/nav.js" defer></script>
-
+    <script src="scripts/results.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
@@ -54,8 +52,9 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Thank you!</h1>
+    <main class="thankyou">
+        <h1>Thank you for becoming a member!</h1>
+        <p class="info">The information you submitted is below.</p>
         
         <div class="results"></div>
     </main>

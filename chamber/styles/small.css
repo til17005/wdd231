@@ -338,23 +338,18 @@ div.company-name {
 }
 
 /********* Main join.html *********/
+/*
+.application {
+    animation: slidein 1s ease-in-out;
+}
+*/
+
 form {
     margin: 2em auto;
     display: flex;
     flex-direction: column;
     justify-self: center;
-    animation: slidein 1s ease-in-out
-}
-
-@keyframes slidein {
-    0%,
-    100% {
-        transform: translate(0%, 0%) scale(.25);
-    }
-
-    100% {
-        transform: translate(0%, 0%) scale(1);
-    }
+    
 }
 
 label {
@@ -414,6 +409,7 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: column;
     justify-self: center;
+    animation: slidein 1s ease-in-out;
 }
 
 .memberships div {
@@ -435,11 +431,60 @@ input[type=submit]:hover {
     box-shadow: -2px 2px 4px var(--text-color);
 }
 
-/********* Main results.html *********/
+@keyframes slidein {
+    0%,
+    100% {
+        transform: translate(0%, 0%) scale(.25);
+    }
+
+    100% {
+        transform: translate(0%, 0%) scale(1);
+    }
+}
+
+.membershipModal {
+    width: 500px;
+    max-width: 95%;
+    padding: 1em;
+    border: 2px solid var(--text-color);
+    border-radius: 1em;
+    background-color: var(--primary-color);
+    box-shadow: -3px 3px 8px var(--accent-color1);
+}
+
+.membershipModal button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  border: none;
+}
+
+.membershipModal p {
+    font-weight: 600;
+    margin: 1em;
+}
+
+.membershipModal ul {
+    list-style: none;
+    margin: 1em;
+}
+
+.membershipModal ul li {
+    margin: .5em;
+}
+
+
+
+/********* Main thankyou.html *********/
+.thankyou .info {
+    text-align: center;
+}
+
 .results {
-    background-color: #F4F1DE;
-    padding: 0 1rem;
-    border: 1px solid #E07A5F;
+    margin: 1em;
+    padding: 1rem;
+    background-color: var(--accent-color1);
+    border: 3px solid var(--accent-color2);
     border-radius: 6px;
 }
 
