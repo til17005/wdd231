@@ -1,0 +1,186 @@
+:root {
+    /* Fonts */
+    --heading-font: 'Rock Salt', 'Fuzzy Bubbles', Helvetica, sans-serif;
+    --standard-font: 'Montserrat', Helvetica, sans-serif;
+
+    /* Colors */
+    --primary-color: #3DDC97; /* Emerald */
+    --secondary-color: #256EFF; /* Brandeis Blue */
+    --accent-color1: #FF495C; /* Folly */
+    --accent-color2: #46237A; /* Tekhelet */
+    --text-color1: #000000; /* Black */
+    --text-color2: #FCFCFC; /* White */
+}
+
+/********* Wild card settings *********/
+* {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--standard-font);
+}
+
+/********* Body settings *********/
+body {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/********* Header *********/
+header { 
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    padding: 20px;
+    text-align: center;
+}
+
+header span {
+    font-family: var(--heading-font);
+    font-size: 2.5em;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/********* Main *********/
+main {
+    padding: 20px;
+}
+
+main h1 {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-family: var(--standard-font);
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/********* Sections *********/
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+section li {
+    font-family: var(--standard-font);
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+section li span {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.colors h2 {
+    grid-column: 1/7;
+}
+
+.colors div {
+    text-align: center;
+    border: 1px solid var(--text-color1);
+}
+
+.colors p {
+    font-family: var(--standard-font);
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.blue {
+    background-color: var(--secondary-color);
+    color: var(--text-color2);
+    height: 300px;
+    padding: 10px;
+}
+
+.purple {
+    background-color: var(--accent-color2);
+    color: var(--text-color2);
+    height: 300px;
+    padding: 10px;
+}
+
+.green {
+    background-color: var(--primary-color);
+    color: var(--text-color1);
+    height: 300px;
+    padding: 10px;
+}
+
+.white {
+    background-color: var(--text-color2);
+    color: var(--text-color1);
+    height: 300px;
+    padding: 10px;
+}
+
+.red {
+    background-color: var(--accent-color1);
+    color: var(--text-color2);
+    height: 300px;
+    padding: 10px;
+}
+
+.black {
+    background-color: var(--text-color1);
+    color: var(--text-color2);
+    height: 300px;
+    padding: 10px;
+}
+
+/********* Typography *********/
+.rock {
+    font-family: var(--heading-font);
+}
+
+.mont {
+    font-family: var(--standard-font);
+    font-size: x-large;
+}
+
+/********* Wireframe *********/
+.wireframe {
+    display: block;
+    width: 90%;
+    height: auto;
+}
+
+/********* Footer *********/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent-color2);
+    color: var(--text-color2);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
