@@ -1,0 +1,64 @@
+{
+    "locations": [
+        {
+            "name": "Blind Kings Keep",
+            "address": "Old Castle Road, Northwest Lyrian",
+            "description": "Part of an old castle where the king stayed after being marred and blinded.",
+            "imagename": "blind_kings_keep.webp"
+        },
+        {
+            "name": "The Repository of Learning",
+            "address": "770 West Lost Lane, Central Lyrian",
+            "description": "A vast collection of ancient texts and scrolls, rumored to hold secrets of the past.",
+            "imagename": "learning_repository.webp"
+        },
+        {
+            "name": "Orren Grove",
+            "address": "East Forest Path, Lyrian Eastern Gate",
+            "description": "A mystical forest where the trees are said to whisper secrets to those who listen.",
+            "imagename": "orren_grove.webp"
+        },
+        {
+            "name": "Felrook Keep",
+            "address": "1820 North Felrook Road, Southern Lyrian",
+            "description": "A fortified keep known for its strategic importance and rich history. Home of Moldor the Black.",
+            "imagename": "felrook.webp"
+        },
+        {
+            "name": "Whitelake",
+            "address": "Whitelake Road, Central Lyrian",
+            "description": "An extremely hot lake surrounded by red sands and death. Known throughout Lyrian for its dangers.",
+            "imagename": "whitelake.webp"
+        },
+        {
+            "name": "Chamber of the Word Guardian",
+            "address": "Hidden Valley, Lyrian Western Gate",
+            "description": "A secretive chamber where the Word Guardian resides, protecting ancient knowledge and wisdom.",
+            "imagename": "chamber_word_guardian.webp"
+        },
+        {
+            "name": "Entrance to Harthenham",
+            "address": "Paradise Springs Circle, Central Lyrian",
+            "description": "A serene village known for its lush landscapes and peaceful atmosphere, often visited by travelers seeking solace.",
+            "imagename": "harthenham_entrance.webp"
+        },
+        {
+            "name": "Oracle Cavern",
+            "address": "Seaside Cliffs, Southwest Lyrian",
+            "description": "A mystical cavern where oracles are said to commune with the spirits of the sea, providing guidance and prophecies.",
+            "imagename": "oracle_cavern.webp"
+        },
+        {
+            "name": "Wispering Monks Temple",
+            "address": "High Mountain Pass, Northwest Lyrian",
+            "description": "An ancient temple where monks practice the art of silence and meditation, believed to hold the key to inner peace.",
+            "imagename": "wispering_monks_temple.webp"
+        },
+        {
+            "name": "Sunken Lands",
+            "address": "Forgotten Marshes Highway, Lyrian Western Gate",
+            "description": "A mysterious area where the land is said to have sunk into the earth, leaving behind eerie marshes and hidden dangers.",
+            "imagename": "sunken_lands.webp"
+        }
+    ]
+}

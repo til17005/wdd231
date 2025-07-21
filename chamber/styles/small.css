@@ -349,7 +349,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    
+
 }
 
 label {
@@ -432,6 +432,7 @@ input[type=submit]:hover {
 }
 
 @keyframes slidein {
+
     0%,
     100% {
         transform: translate(0%, 0%) scale(.25);
@@ -453,10 +454,10 @@ input[type=submit]:hover {
 }
 
 .membershipModal button {
-  position: absolute;
-  top: 23px;
-  right: 23px;
-  border: none;
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    border: none;
 }
 
 .membershipModal p {
@@ -487,6 +488,9 @@ input[type=submit]:hover {
     border: 3px solid var(--accent-color2);
     border-radius: 6px;
 }
+
+/********* Main disover.html *********/
+
 
 /********* Footer *********/
 footer {
