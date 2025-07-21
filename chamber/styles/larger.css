@@ -1,4 +1,4 @@
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 38rem) {
 
     header,
     main,
@@ -114,7 +114,18 @@
         margin: .5em;
     }
 
+    /********* Main discover.html *********/
+    .discover div {
+        grid-template-areas: 
+        "image name"
+        "image description"
+        "image address"
+        "image button";
+    }
 
+    .discover div img {
+        width: 300px;
+    }
 
     /********* Footer *********/
     footer {
@@ -128,6 +139,30 @@
     }
 }
 
-@media only screen and (min-width: 1025px) {
-    
+@media only screen and (min-width: 64rem) {
+    /********* Main discover.html *********/
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5em;
+    }
+
+    .discover div img {
+        margin: 1em;
+        width: 300px;
+        height: 200px;
+    }
+
+    .discover div {
+        grid-template-areas: 
+        "name"
+        "image"        
+        "description"
+        "address"
+        "button";
+    }
+
+    .discover div figure {
+        margin: 0 auto;
+    }
 }

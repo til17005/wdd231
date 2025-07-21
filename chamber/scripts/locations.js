@@ -30,20 +30,19 @@ const getLocations = async () => {
         // Select the first 8 locations after randomization
         const selectedLocations = randomSet.slice(0, 8);
 
-        console.log(selectedLocations);
+        // console.log(selectedLocations);
 
         // Loop through each location and create a new div for each
         selectedLocations.forEach(location => {
+            // console.log(location);
             const locationItem = document.createElement('div');
-            locationItem.classList.add('location-item');
             locationItem.innerHTML = `
                 <h2>${location.name}</h2>
-                <figure>
-                    <img src="images/${location.imagename}" alt="${location.name}" class="location-image" width="300" height="200" loading="lazy">
-                    <figcaption>${location.name} ${location.description}</figcaption>
-                </figure>
                 <address>${location.address}</address>
-                <p>${location.description}</p>
+                <figure>
+                    <img src="images/${location.imagename}" alt="${location.name}" width="300" height="200" loading="lazy">
+                </figure>                
+                <p>${location.description}</p>                
                 <button>Learn More</button>                
             `;
             discover.appendChild(locationItem);

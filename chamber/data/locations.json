@@ -7,7 +7,7 @@
             "imagename": "blind_kings_keep.webp"
         },
         {
-            "name": "The Repository of Learning",
+            "name": "Repository of Learning",
             "address": "770 West Lost Lane, Central Lyrian",
             "description": "A vast collection of ancient texts and scrolls, rumored to hold secrets of the past.",
             "imagename": "learning_repository.webp"
@@ -31,7 +31,7 @@
             "imagename": "whitelake.webp"
         },
         {
-            "name": "Chamber of the Word Guardian",
+            "name": "Word Guardian Chamber",
             "address": "Hidden Valley, Lyrian Western Gate",
             "description": "A secretive chamber where the Word Guardian resides, protecting ancient knowledge and wisdom.",
             "imagename": "chamber_word_guardian.webp"

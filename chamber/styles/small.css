@@ -490,6 +490,66 @@ input[type=submit]:hover {
 }
 
 /********* Main disover.html *********/
+.discover div {
+    margin: 1em 12px;
+    border: 1px solid var(--text-color);
+    background-color: var(--primary-color);
+    border-radius: 1.5em;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "description"
+        "address"
+        "button";
+}
+
+.discover div img {
+    width: 100%;
+    height: auto;
+}
+
+.discover div h2 {
+    text-align: left;
+    padding: 1em 2em;
+    background-color: var(--accent-color1);
+    grid-area: name;
+}
+
+.discover div figure {
+    grid-area: image;
+}
+
+.discover div p {
+    margin: 1em 2em;
+    grid-area: description;
+}
+
+.discover div address {
+    margin: 1em 2em;
+    grid-area: address;
+}
+
+.discover div button {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: 10px;
+    background-color: var(--accent-color2);
+    border-radius: 2em;
+    color: white;
+    grid-area: button;
+}
+
+.discover div img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.discover div button:hover {
+    background-color: var(--accent-color1);
+    cursor: pointer;
+}
 
 
 /********* Footer *********/
