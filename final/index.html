@@ -8,7 +8,7 @@
     <meta name="description" content="WDD 231: Web Frontend Developement 1 - Final Project home page for Matthew M. Tilton">
     <meta name="author" content="Matthew Tilton">
 
-    <meta property="og:title" content="WDD 231: Web Frontend Developement 1 - Matthew M. Tilton">
+    <meta property="og:title" content="WDD 231: Web Frontend Developement 1 - Matthew M. Tilton - Final Project">
     <meta property="og:description"
         content="WDD 231: Web Frontend Developement 1 - Final Project home page for Matthew M. Tilton">
     <meta property="og:url" content="https://til17005.github.io/wdd231/final/">
@@ -26,7 +26,9 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/tagline.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    
 </head>
 
 <body>
@@ -43,14 +45,45 @@
             <li><a href="subscribe.html">Newsletter</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="home">
         <div class="hero">
-            <img src="images/hero.webp" alt="Disc golf basket sourounded by trees" width="900" height="300">
+            <img src="images/hero.webp" alt="Disc golf basket sourounded by trees" width="900" height="300" loading="lazy">
             <button class="newsletter">Newsletter</button>
+            <h1>Welcome to Discqualified</h1>
         </div>
-        
+        <section>
+            <h2>Where Every Throw Counts (even the bad ones)</h2>
+            <p>New to disc golf? You’re in the right place. Discqualified is your go-to guide for learning the ropes, laughing at the flubs,
+                and falling in love with the game—one throw at a time.</p>
+        </section>
+        <section>
+            <h2>What We're About</h2>
+            <p>At Discqualified, we believe that every throw counts—especially the bad ones. Our mission is to create a welcoming community 
+                for disc golf enthusiasts of all skill levels. Whether you're a seasoned pro or just starting out, you'll find valuable resources, 
+                tips, and a supportive network here.</p>
+        </section>
+        <section>
+            <h2>Why "Discqualified"?</h2>
+            <p>The name "Discqualified" is a playful take on the term "disqualified," reflecting our belief that every throw—good or bad—contributes
+                 to the learning process. We embrace mistakes and encourage players to laugh at their flubs, fostering a positive and inclusive environment.</p>
+
+            <p>Because we’ve all hit a tree five feet in front of us. We believe the best way to get better is to have fun, laugh at the bad shots, and keep throwing.</p>
+            <p>Join us on this journey as we explore the world of disc golf, share tips and tricks, and celebrate the joy of the game. Whether you're looking for advice on 
+                technique, gear recommendations, or just a good laugh, Discqualified has got you covered.</p>
+        </section>
+        <section>
+            <h2>Ready to Play?</h2>
+            <p>Great! Here are a few tips to help you get started:</p>
+            <ul>
+                <li>Familiarize yourself with the basic rules of disc golf.</li>
+                <li>Practice your throwing technique in an open area.</li>
+                <li>Join a local disc golf club or community to meet other players.</li>
+                <li>Have fun and don't be afraid to make mistakes!</li>
+            </ul>
+        </section>
     </main>
     <footer>
+        <span class="tagline"></span>
         <div class="social">
             <a href="https://github.com/til17005"><img src="images/github.svg" alt="My github" width="1" height="1"></a>
             <a href="https://www.linkedin.com/in/matthew-tilton-249a15/"><img src="images/linkedin.svg"

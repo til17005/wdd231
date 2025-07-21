@@ -31,4 +31,11 @@
     .navigation a {
         text-align: center;
     }
+
+    /********* Main Home *********/
+    /* button for newsletter */
+    .home .newsletter {
+        bottom: 25%;
+    }
+
 }
