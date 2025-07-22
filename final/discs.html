@@ -26,7 +26,11 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <link rel="preload" href="data/tagline.json" as="fetch" type="application/json" crossorigin="anonymous">
+
     <script src="scripts/nav.js" defer></script>
+    <script type="module" src="scripts/discs.js"></script>
+    <script src="scripts/tagline.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
@@ -45,8 +49,10 @@
         </ul>
     </nav>
     <main>
+        <div class="discover"></div>
     </main>
     <footer>
+        <span class="tagline"></span>
         <div class="social">
             <a href="https://github.com/til17005"><img src="images/github.svg" alt="My github" width="1" height="1"></a>
             <a href="https://www.linkedin.com/in/matthew-tilton-249a15/"><img src="images/linkedin.svg"

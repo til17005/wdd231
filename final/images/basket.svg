@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<svg
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg2"
+    viewBox="0 0 17 26"
+    version="1.0"
+  >
+  <g
+      id="layer1"
+      stroke="#000"
+      stroke-width="1px"
+      fill="none"
+    >
+    <path
+        id="path2660"
+        d="m1.9474 1.7895h13.053"
+    />
+    <path
+        id="path2664"
+        d="m8.4737 1.7895v24.106l0.0526-0.001"
+    />
+    <path
+        id="path2672"
+        d="m3.5263 17.474h9.9997v-0.106c-0.052 0.053 2.053-1.157 2.053-1.157v-3.843h-14.263l0.1051 3.79 2.1052 1.316z"
+    />
+    <path
+        id="path2674"
+        d="m3.6316 12.737v4.263-0.053h-0.0527"
+    />
+    <path
+        id="path2676"
+        d="m5.6316 12.368v5.211"
+    />
+    <path
+        id="path2678"
+        d="m11.579 12.263l0.053 5.158"
+    />
+    <path
+        id="path2680"
+        d="m13.421 12.316v5.052"
+    />
+    <path
+        id="path2686"
+        d="m5.4211 1.9474c0.1052 13.527 3.1052 13.632 3.1052 13.632m2.9477-13.895c0.105 14.211-3.0529 13.527-3.0529 13.527l-0.1579 0.157 0.0526 0.106v-0.053s-5.7369-0.368-5.8947-13.421"
+    />
+    <path
+        id="path2688"
+        d="m14.421 1.7895c0 13.526-5.9999 13.526-5.9999 13.526"
+    />
+  </g
+  >
+  <path
+      id="path2690"
+      stroke="#000"
+      stroke-width="1px"
+      fill="none"
+      d="m6.4211 25.947h3.9469"
+  />
+  <rect
+      id="rect2694"
+      fill-rule="evenodd"
+      height="1.5789"
+      width="12.789"
+      stroke="#000"
+      y=".10526"
+      x="1.9474"
+      stroke-width="1px"
+      fill="#ff0"
+  />
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >disc golf goal</dc:title
+        >
+        <dc:date
+          >2009-09-24T04:05:06</dc:date
+        >
+        <dc:description
+        />
+        <dc:source
+          >https://openclipart.org/detail/176045/Clipart-by-mat_cutler</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >mat_cutler</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >disc golf</rdf:li
+            >
+            <rdf:li
+              >goal</rdf:li
+            >
+            <rdf:li
+              >net</rdf:li
+            >
+            <rdf:li
+              >sports</rdf:li
+            >
+            <rdf:li
+              >disk golf</rdf:li
+            >
+            <rdf:li
+              >play</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
