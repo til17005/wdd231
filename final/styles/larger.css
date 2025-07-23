@@ -38,5 +38,20 @@
         bottom: 25%;
     }
 
+    /********* Main Discs Modal *********/
+    .disc-dialog {
+        width: 400px;
+        left: 10em;
+        top: 10em;
+        
+    }
+}
 
+@media only screen and (min-width: 60rem) {
+    /********* Main Discs Modal *********/
+    .disc-dialog {
+        width: 500px;
+        left: 25em;
+        top: 10em;     
+    }
 }

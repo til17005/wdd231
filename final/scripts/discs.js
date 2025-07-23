@@ -17,18 +17,17 @@ const getDiscs = async () => {
     }
 }
 
-
-const discData = await getDiscs();
-console.log(discData); // Logs actual data
-
+// I set an empty array here so I can use it later outside the function
+let discData = [];
 
 (async () => {
-    const discData = await getDiscs();
+    discData = await getDiscs();
     if (discData) {
         // Set and clear my discover div
         discover.innerHTML = '';
 
-        // Randomize the order of discs
+        // Randomize the order of discs - I have used this version of randomization in other parts of my project this term
+        // It's a quick and easy way to randomize an array even though it is not the most accurate way
         const randomSet = discData.sort(() => Math.random() - 0.5);
 
         // Select the first 9 discs after randomization
@@ -45,9 +44,53 @@ console.log(discData); // Logs actual data
                 <figure>
                     <img src="${disc.pic}" alt="${disc.brand} ${disc.name}" width="1" height="1" loading="lazy">
                 </figure>                
-                <button>Learn More</button>
+                <button class="more-info" id="${disc.id}">More Info</button>
             `;
             discover.appendChild(discItem);
         });
+
+        // Add an event listener to the discover section. I used discover because of a play on words.
+        document.querySelector('.discover').addEventListener('click', (event) => {
+            if (event.target.classList.contains('more-info')) {
+                const discId = event.target.id;
+                const disc = discData.find(d => d.id === discId);
+
+                if (disc) {
+                    displayDiscDetails(disc);
+                }
+            }
+        });
+
     }
+    console.log(discData); // Log to console for debugging
 })();
+
+
+// Set my disc dialog element
+const discDialog = document.querySelector('.disc-dialog');
+
+// Function to show my disc modal
+function displayDiscDetails(disc) {
+    discDialog.innerHTML = '';
+    discDialog.innerHTML = `
+        <h2>${disc.name}</h2>
+        <p>Brand: <span>${disc.brand}</span></p>
+        <p>Type: <span>${disc.category}</span></p>
+        <figure>
+            <img src="${disc.pic}" alt="${disc.brand} ${disc.name}" width="1" height="1" loading="lazy">
+        </figure>
+        <p>Speed: <span>${disc.speed}</span></p>
+        <p>Glide: <span>${disc.glide}</span></p>
+        <p>Turn: <span>${disc.turn}</span></p>
+        <p>Fade: <span>${disc.fade}</span></p>
+        <p>Stability: <span>${disc.stability}</span></p>
+        <button class="close-dialog">❌</button>
+    `;
+
+    discDialog.showModal();
+
+    const closeDialog = document.querySelector(".close-dialog");
+    closeDialog.addEventListener("click", () => {
+        discDialog.close();
+    });
+};

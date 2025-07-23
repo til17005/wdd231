@@ -219,6 +219,15 @@ h2 {
 }
 
 /********* Main Discs *********/
+.discs {
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.discs h1 {
+    text-align: center;
+}
+
 .discover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -275,8 +284,146 @@ h2 {
     box-shadow: -3px 3px 12px var(--secondary-color);
 }
 
+/* Modal Dialog */
+.disc-dialog {
+    width: 300px;
+    max-width: 90%;
+    padding: 1em;
+    border-radius: 1em;
+    left: 1em; top: 10em;
+    overflow: auto;
+    background-color: var(--accent-color2);
+    color: var(--text-color2);
+    box-shadow: 0px 0px 12px var(--accent-color2);
+}
 
+.disc-dialog h2 {
+    margin-bottom: 0.5em;
+}
 
+.disc-dialog figure {
+    margin: 0;
+    padding: 0;
+}
+
+.disc-dialog img {
+    margin: 1em 0;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.disc-dialog p {
+    margin: 0.5em 0;
+    font-weight: 600;
+}
+
+.disc-dialog p span {
+    font-weight: 400;
+}
+
+.disc-dialog.show {
+    display: block;
+}
+
+.close-dialog {
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Basics */
+.basics {
+    margin-top: 1em;
+    padding: 1em;
+    color: var(--text-color1);
+    text-shadow: 1px 1px 3px var(--accent-color1);
+
+}
+
+.flight-path, .angle {
+    display: block;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 1.5em;
+}
+
+figcaption {
+    display: flex;
+    text-shadow: 0px 0px 12px var(--accent-color1);
+    justify-content: right;
+    font-style: italic;
+    margin-bottom: 1.5em;
+    padding-right: 3em;
+}
+
+/********* Main Locations *********/
+.locate {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.locate h1 {
+    text-align: center;
+}
+
+.weather-card{
+    display: grid;
+    grid-template-areas: 
+        "icon temperature"
+        "description description"
+        "high low"
+        "humidity humidity"
+        "sunrise sunset";
+    width: 100%;
+    max-width: 300px;
+    margin: 1em auto;
+    padding: 1em;
+    background-color: var(--secondary-color);
+    border-radius: 1em;
+    box-shadow: 0px 0px 12px var(--accent-color1);
+    color: var(--text-color2);
+}
+
+.weather-icon {
+    width: 100px;
+    height: auto;
+}
+
+.weather p {
+    font-weight: 500;
+}
+
+.weather span {
+    font-weight: bold;
+}
+
+.locate .locate-p {
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.locate ul {
+    list-style: disc;
+    padding-left: 1.5em;
+}
+
+.locate ul li {
+    margin-bottom: 0.5em;
+}
+
+.locate a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.locate a:hover {
+    text-decoration: underline;
+}
 
 /********* Footer *********/
 footer {
@@ -285,7 +432,6 @@ footer {
     text-align: center;
     color: black;
     border-radius: 1em 1em 0 0;
-    ;
 }
 
 footer span.tagline {
