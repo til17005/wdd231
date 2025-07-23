@@ -45,6 +45,28 @@
         top: 10em;
         
     }
+
+    /********* Main Location *********/
+    .weather-location {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "weather city";
+        gap: 1em;
+        align-items: center;
+        margin: 1em 3em;
+    }
+
+    .weather {
+        grid-area: weather;
+        text-align: center;
+    }
+
+    .city {
+        grid-area: city;
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
 }
 
 @media only screen and (min-width: 60rem) {

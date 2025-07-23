@@ -228,6 +228,16 @@ h2 {
     text-align: center;
 }
 
+.discs p {
+    max-width: 800px;
+    font-weight: 500;
+    margin: 1em auto;
+}
+
+.discs .sample {
+    font-weight: 600;
+}
+
 .discover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -290,7 +300,8 @@ h2 {
     max-width: 90%;
     padding: 1em;
     border-radius: 1em;
-    left: 1em; top: 10em;
+    left: 1em;
+    top: 10em;
     overflow: auto;
     background-color: var(--accent-color2);
     color: var(--text-color2);
@@ -327,11 +338,12 @@ h2 {
 }
 
 .close-dialog {
-  position: absolute;
-  top: 10px; right: 20px;
-  font-size: 28px;
-  cursor: pointer;
-  border: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    border: none;
 }
 
 /* Basics */
@@ -343,7 +355,8 @@ h2 {
 
 }
 
-.flight-path, .angle {
+.flight-path,
+.angle {
     display: block;
     width: 95%;
     height: auto;
@@ -360,6 +373,58 @@ figcaption {
     padding-right: 3em;
 }
 
+.discs h3 {
+    font-family: var(--heading-font);
+    margin: 1em 2em;
+    color: var(--text-color1);
+}
+
+.discs table {
+    width: 90%;
+    border: 1px solid var(--text-color1);
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+
+.discs th,
+.discs td {
+    border: 1px solid var(--text-color1);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.discs th {
+    background-color: var(--secondary-color);
+    color: var(--text-color2);
+}
+
+.discs ul {
+    list-style: disc;
+    padding-left: 2em;
+    margin: 1em 3em;
+}
+
+.discs ul li {
+    margin-bottom: 1em;
+}
+
+.tip {
+    max-width: 90%;
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    padding: 0.5em 1em;
+    margin: 1em auto;
+}
+
+.discs span {
+    font-weight: bold;
+}
+
+.rhbh {
+    margin: 1em 3em;
+    font-style: italic;
+}
+
 /********* Main Locations *********/
 .locate {
     max-width: 800px;
@@ -371,9 +436,17 @@ figcaption {
     text-align: center;
 }
 
-.weather-card{
+.city {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.weather-card {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "icon temperature"
         "description description"
         "high low"
