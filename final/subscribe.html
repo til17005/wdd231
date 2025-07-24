@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <script src="scripts/nav.js" defer></script>
-    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/main.mjs"></script>
 </head>
 
 <body>
@@ -47,6 +46,12 @@
     <main>
     </main>
     <footer>
+        <span class="tagline"></span>
+        <div class="course">
+            <p>WDD 231</p>
+            <p>Web Frontend Developement 1</p>
+            <p>Final Project</p>
+        </div>
         <div class="social">
             <a href="https://github.com/til17005"><img src="images/github.svg" alt="My github" width="1" height="1"></a>
             <a href="https://www.linkedin.com/in/matthew-tilton-249a15/"><img src="images/linkedin.svg"
@@ -54,8 +59,10 @@
             <a href="https://www.facebook.com/matthew.tilton.2025/"><img src="images/facebook.svg" alt="My facebook"
                     width="1" height="1"></a>
         </div>
-        <p>&copy; <span id="currentyear"></span> | Matthew Tilton | Utah</p>
-        <p id="lastModified"></p>
+        <div class="date">
+            <p>&copy; <span id="currentyear"></span> | Matthew Tilton | Utah</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 

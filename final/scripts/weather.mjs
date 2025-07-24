@@ -13,12 +13,12 @@ const units = 'imperial';
 const currentWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${myAPI}&units=${units}`;
 
 // Function to fetch and display current weather data
-async function getCurrentWeather() {
+export async function getCurrentWeather() {
     try {
         const response = await fetch(currentWeatherURL);
         if (response.ok) {
             const weatherData = await response.json();
-            console.log(weatherData); // For my testing only
+            // console.log(weatherData); // For my testing only
             displayCurrentWeather(weatherData);
         } else {
             throw Error(await response.text());
@@ -80,5 +80,3 @@ function displayCurrentWeather(weatherData) {
 
     currentWeather.appendChild(weatherCard);
 }
-
-getCurrentWeather();

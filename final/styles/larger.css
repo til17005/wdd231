@@ -43,7 +43,7 @@
         width: 400px;
         left: 10em;
         top: 10em;
-        
+
     }
 
     /********* Main Location *********/
@@ -67,13 +67,19 @@
         font-size: 1.2rem;
         font-weight: 600;
     }
+
+    /********* Footer *********/
+    .social {
+        margin-top: 1em;
+    }
 }
 
 @media only screen and (min-width: 60rem) {
+
     /********* Main Discs Modal *********/
     .disc-dialog {
         width: 500px;
         left: 25em;
-        top: 10em;     
+        top: 10em;
     }
 }

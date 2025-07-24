@@ -500,6 +500,8 @@ figcaption {
 
 /********* Footer *********/
 footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--secondary-color);
     padding: 1rem 10px;
     text-align: center;
@@ -508,22 +510,44 @@ footer {
 }
 
 footer span.tagline {
+    grid-column: 1/4;
     display: block;
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 1em;
     color: var(--text-color2);
+    text-shadow: 1px 1px 3px var(--accent-color1);
 }
 
 footer p {
     color: var(--text-color2);
+    font-weight: 600;
+}
+
+.course {
+    grid-column: 1;
+}
+
+.course p {
+    margin: .5em;
+    color: var(--text-color2);
+    text-shadow: 1px 1px 3px var(--accent-color2);
+}   
+
+.date {
+    grid-column: 1/4;
+    font-style: italic;
+    text-shadow: 1px 1px 3px var(--accent-color2);
 }
 
 .social {
+    grid-column: 3;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 20px;
-    padding-bottom: 1em;
+    row-gap: 10px;
+    padding-bottom: 1em;    
 }
 
 .social a {
@@ -535,6 +559,7 @@ footer p {
     background-color: var(--text-color2);
     border: 2px solid var(--text-color1);
     border-radius: 3em;
+    box-shadow: -3px -1px 12px var(--accent-color2);
 }
 
 .social img {
