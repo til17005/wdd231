@@ -46,7 +46,7 @@ if (getURL.includes('/final/index.html')) {
 if (getURL.includes('/final/index.html')) {
     const newsletter = document.querySelector('.newsletter');
     newsletter.addEventListener('click', () => {
-        window.location.href = '/final/subscribe.html';
+        window.location.href = 'subscribe.html';
     });
 }
 
