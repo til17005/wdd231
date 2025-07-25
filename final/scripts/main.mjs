@@ -26,10 +26,56 @@ navLinks.forEach(link => {
 });
 
 /**************************
+***      Newsletter     ***
+**************************/
+if (getURL == '/final/index.html') {
+    const newsletter = document.querySelector('.newsletter');
+    newsletter.addEventListener('click', () => {
+        window.location.href = '/final/subscribe.html';
+    });
+}
+
+
+import { getString, signupInfo, intrests } from './newsletter.mjs';
+import { setTimestamp } from './date.mjs';
+if (getURL == '/final/thanks.html') {
+    console.log(getString);
+    //console.log(signupInfo);
+
+    //console.log(signupInfo.get('first'));
+    //console.log(signupInfo.get('last'));
+    //console.log(signupInfo.get('phone'));
+    //console.log(signupInfo.get('email'));
+    //console.log(signupInfo.get('expertise'));
+    //console.log(signupInfo.get('throwing-tips'));
+    //console.log(signupInfo.get('disc-info'));
+    //console.log(signupInfo.get('courses'));
+    //console.log(signupInfo.get('tips-tricks'));
+    //console.log(signupInfo.get('frequency'));
+
+    //console.log(intrests);
+
+    // SetTimestamp param
+    signupInfo.set('timestamp', setTimestamp);
+
+    const formatIntrests = intrests.join(', ');
+
+    document.querySelector('.results').innerHTML = `
+    <p><span>Name:</span> ${signupInfo.get('first')} ${signupInfo.get('last')}</p>
+    <p><span>Phone:</span>  ${signupInfo.get('phone')}</p>
+    <p><span>Email:</span> ${signupInfo.get('email')}</p>
+    <p><span>Expertise:</span> ${signupInfo.get('expertise')}</p>
+    <p><span>Intrests:</span> ${formatIntrests}</p>
+    <p><span>Frequency:</span> ${signupInfo.get('frequency')}</p>
+    <p><span>Form Completion:</span> ${signupInfo.get('timestamp')}</p>
+    `;
+}
+
+/**************************
 ***        Discs        ***
 **************************/
 import { getDiscs, displayDiscDetails } from './discs.mjs';
-if (getURL == '/final/discs.html') { 
+if (getURL == '/final/discs.html') {
     const discover = document.querySelector('.discover');
 
     // I set an empty array here so I can use it later outside the function
@@ -45,9 +91,10 @@ if (getURL == '/final/discs.html') {
             // It's a quick and easy way to randomize an array even though it is not the most accurate way
             const randomSet = discData.sort(() => Math.random() - 0.5);
 
-            // Select the first 9 discs after randomization
+            // Select the first 21 discs after randomization
             // I started with 10 discs from the API, but it looked off so I went to 12 and it was too crowded, so I settled on 9
-            const selectedDiscs = randomSet.slice(0, 9);
+            // until I reread the instructions to include at least 15
+            const selectedDiscs = randomSet.slice(0, 21);
 
             // Loop through each disc and create a new div for each
             selectedDiscs.forEach(disc => {
@@ -55,7 +102,7 @@ if (getURL == '/final/discs.html') {
                 discItem.innerHTML = `
                 <h2>${disc.name}</h2>
                 <p>Brand: ${disc.brand}</p>
-                <p>Type:${disc.category}</p>
+                <p>Type: ${disc.category}</p>
                 <figure>
                     <img src="${disc.pic}" alt="${disc.brand} ${disc.name}" width="1" height="1" loading="lazy">
                 </figure>                

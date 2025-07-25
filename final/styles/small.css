@@ -21,6 +21,31 @@
     font-family: var(--standard-font);
 }
 
+/********* html, body, main *********/
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header,
+nav,
+main,
+footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
 /********* Header *********/
 header {
     display: grid;
@@ -92,12 +117,6 @@ header span {
     color: var(--accent-color2);
     font-weight: bold;
     text-shadow: 2px 2px 3px var(--accent-color1);
-}
-
-/********* Main *********/
-h1,
-h2 {
-    font-family: var(--heading-font);
 }
 
 /********* Main Home *********/
@@ -319,6 +338,7 @@ h2 {
 
 .disc-dialog img {
     margin: 1em 0;
+    aspect-ratio: 20/17;
     width: 100%;
     height: auto;
     border-radius: 0.5em;
@@ -358,10 +378,20 @@ h2 {
 .flight-path,
 .angle {
     display: block;
-    width: 95%;
-    height: auto;
     margin: 0 auto;
-    border-radius: 1.5em;
+    border-radius: 1em;
+}
+
+.angle {
+    aspect-ratio: 1024/222;
+    width: 100%;
+    height: auto;
+}
+
+.flight-path {
+    aspect-ratio: 1024/717;
+    width: 100%;
+    height: auto;
 }
 
 figcaption {
@@ -498,6 +528,150 @@ figcaption {
     text-decoration: underline;
 }
 
+/********* Main Newsletter *********/
+.newsletter-form h1 {
+    text-align: center;
+}
+
+.newsletter-form {
+    max-width: 600px;
+    margin: 1em auto;
+    display: block;
+}
+
+.newsletter-form form {
+    border: 4px solid var(--secondary-color);
+    border-radius: 2em;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.newsletter-form fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em .5em;
+    border-radius: 2em;
+    background-color: var(--text-color2);
+    margin-bottom: 2em;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.newsletter-form fieldset legend {
+    font-weight: 600;
+    font-size: 1.6em;
+    margin: .5em;
+}
+
+.newsletter-form fieldset span {
+    font-weight: 600;
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+
+.newsletter-form input,
+.newsletter-form label,
+.newsletter-form select {
+    width: 90%;
+}
+
+.newsletter-form .contact input,
+.newsletter-form select {
+    height: 2em;
+    margin-bottom: 2em;
+}
+
+.checked,
+.radio {
+    display: grid;
+    grid-template-columns: 10% auto;
+    gap: 10px;
+}
+
+.checked input[type="checkbox"],
+.radio input[type="radio"] {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.newsletter-form input[type="submit"] {
+    width: 95%;
+    text-align: center;
+    background-color: var(--accent-color2);
+    color: var(--text-color2);
+    min-height: 2.5em;
+    padding: .5em;
+    font-weight: 600;
+    font-size: 1.5em;
+    border: 2px solid var(--accent-color1);
+    border-radius: 2em;
+    box-shadow: -2px 2px 8px var(--primary-color);
+}
+
+.newsletter-form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--text-color1);
+}
+
+/********* Thanks *********/
+.thanks h1 {
+    text-align: center;
+}
+
+.thanks .submitted {
+    text-align: center;
+    padding: 1em;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.results {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 3px solid var(--primary-color);
+    border-radius: 2em;
+    padding: .5em;
+
+}
+
+.results p {
+    margin: .5em;
+}
+
+.results span {
+    font-weight: 600;
+}
+
+/********* Attributions *********/
+.attributions {
+    display: block;
+    margin: 1em auto;
+}
+
+.attributions h1 {
+    text-align: center;
+}
+
+.attributions div {
+    margin: 1em;
+    border: 3px solid var(--accent-color2);
+    border-radius: 25px;
+    padding: .5em;
+}
+
+.attributions p {
+    margin: .75em 0;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.attributions span {
+    font-weight: 700;
+}
+
 /********* Footer *********/
 footer {
     display: grid;
@@ -532,7 +706,7 @@ footer p {
     margin: .5em;
     color: var(--text-color2);
     text-shadow: 1px 1px 3px var(--accent-color2);
-}   
+}
 
 .date {
     grid-column: 1/4;
@@ -547,7 +721,7 @@ footer p {
     justify-content: center;
     column-gap: 20px;
     row-gap: 10px;
-    padding-bottom: 1em;    
+    padding-bottom: 1em;
 }
 
 .social a {
@@ -570,4 +744,24 @@ footer p {
 .social a:hover {
     background-color: var(--accent-color1);
     border-radius: 3em;
+}
+
+.attribute, .demo {
+    grid-column: 1/4;
+    margin-top: 1em;
+}
+
+.attribute a, .demo a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color2);
+    font-style: italic;
+    text-shadow: 1px 1px 1px var(--primary-color);
+    font-weight: 500;
+}
+
+.attribute a:hover, .demo a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px var(--accent-color2);
+    font-weight: 600;
 }

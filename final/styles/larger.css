@@ -68,9 +68,24 @@
         font-weight: 600;
     }
 
+    /********* Newsletter *********/
+    .newsletter-form input[type="submit"],
+    .newsletter-form select,
+    .newsletter-form input {
+        width: 75%;
+    }
+
     /********* Footer *********/
     .social {
         margin-top: 1em;
+    }
+
+    .attribute {
+        grid-column: 3;
+    }
+
+    .demo {
+        grid-column: 1;
     }
 }
 
