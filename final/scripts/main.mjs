@@ -1,6 +1,6 @@
 // This variable is used for if staements below to determine whcih pages to run scripts on to avoid errors when not needed on all pages
 const getURL = window.location.pathname;
-// console.log(getURL);
+ console.log(getURL);
 
 /**************************
 ***      Navigation     ***
