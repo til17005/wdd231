@@ -1,6 +1,6 @@
 // This variable is used for if staements below to determine whcih pages to run scripts on to avoid errors when not needed on all pages
 const getURL = window.location.pathname;
- console.log(getURL);
+// console.log(getURL);
 
 /**************************
 ***      Navigation     ***
@@ -30,7 +30,7 @@ navLinks.forEach(link => {
 **************************/
 import { getVisitStorage } from './storage.mjs';
 
-if (getURL == '/final/index.html') {
+if (getURL.includes('/final/index.html')) {
     const name = document.querySelector('.name');
     const back = document.querySelector('.back')
 
@@ -43,7 +43,7 @@ if (getURL == '/final/index.html') {
 /**************************
 ***      Newsletter     ***
 **************************/
-if (getURL == '/final/index.html') {
+if (getURL.includes('/final/index.html')) {
     const newsletter = document.querySelector('.newsletter');
     newsletter.addEventListener('click', () => {
         window.location.href = '/final/subscribe.html';
@@ -54,7 +54,7 @@ if (getURL == '/final/index.html') {
 import { getString, signupInfo, intrests } from './newsletter.mjs';
 import { setTimestamp } from './date.mjs';
 import { setVisitStorage } from './storage.mjs';
-if (getURL == '/final/thanks.html') {
+if (getURL.includes('/final/thanks.html')) {
     console.log(getString);
     //console.log(signupInfo);
 
@@ -93,7 +93,7 @@ if (getURL == '/final/thanks.html') {
 ***        Discs        ***
 **************************/
 import { getDiscs, displayDiscDetails } from './discs.mjs';
-if (getURL == '/final/discs.html') {
+if (getURL.includes('/final/discs.html')) {
     const discover = document.querySelector('.discover');
 
     // I set an empty array here so I can use it later outside the function
@@ -152,7 +152,7 @@ if (getURL == '/final/discs.html') {
 **************************/
 import { getCurrentWeather } from './weather.mjs';
 
-if (getURL == '/final/locate.html') {
+if (getURL.includes('/final/locate.html')) {
     getCurrentWeather();
 }
 
