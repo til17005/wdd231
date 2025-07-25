@@ -55,7 +55,7 @@ import { getString, signupInfo, intrests } from './newsletter.mjs';
 import { setTimestamp } from './date.mjs';
 import { setVisitStorage } from './storage.mjs';
 if (getURL.includes('/final/thanks.html')) {
-    console.log(getString);
+    //console.log(getString);
     //console.log(signupInfo);
 
     //console.log(signupInfo.get('first'));
