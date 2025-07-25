@@ -26,6 +26,21 @@ navLinks.forEach(link => {
 });
 
 /**************************
+***    Visit Storage    ***
+**************************/
+import { getVisitStorage } from './storage.mjs';
+
+if (getURL == '/final/index.html') {
+    const name = document.querySelector('.name');
+    const back = document.querySelector('.back')
+
+    if (getVisitStorage()) {
+        name.innerHTML = `${getVisitStorage()},`;
+        back.innerHTML = 'back';
+    }
+}
+
+/**************************
 ***      Newsletter     ***
 **************************/
 if (getURL == '/final/index.html') {
@@ -38,6 +53,7 @@ if (getURL == '/final/index.html') {
 
 import { getString, signupInfo, intrests } from './newsletter.mjs';
 import { setTimestamp } from './date.mjs';
+import { setVisitStorage } from './storage.mjs';
 if (getURL == '/final/thanks.html') {
     console.log(getString);
     //console.log(signupInfo);
@@ -69,6 +85,8 @@ if (getURL == '/final/thanks.html') {
     <p><span>Frequency:</span> ${signupInfo.get('frequency')}</p>
     <p><span>Form Completion:</span> ${signupInfo.get('timestamp')}</p>
     `;
+
+    setVisitStorage();
 }
 
 /**************************
