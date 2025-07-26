@@ -34,7 +34,7 @@
 
     /********* Main Home *********/
     /* button for newsletter */
-    .home .newsletter {
+    #home .newsletter {
         bottom: 25%;
     }
 
@@ -43,7 +43,6 @@
         width: 400px;
         left: 10em;
         top: 10em;
-
     }
 
     /********* Main Location *********/
@@ -69,9 +68,9 @@
     }
 
     /********* Newsletter *********/
-    .newsletter-form input[type="submit"],
-    .newsletter-form select,
-    .newsletter-form input {
+    #newsletter-form input[type="submit"],
+    #newsletter-form select,
+    #newsletter-form input {
         width: 75%;
     }
 

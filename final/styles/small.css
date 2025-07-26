@@ -161,14 +161,16 @@ header span {
     outline: none;
 }
 
+/* Dynamic H1 */
 #name, #back {
     font-family: var(--heading-font);
 }
 
-#home #name {
+#name {
     text-shadow: 1px 1px 2px var(--accent-color1);
 }
 
+/* Content */
 #home section {
     max-width: 800px;
     margin: 1.5em auto;
@@ -188,7 +190,7 @@ header span {
     color: var(--text-color2);
 }
 
-#home .disc {
+.disc {
     margin: 1em;
     padding: .1em;
     float: right;
@@ -201,7 +203,7 @@ header span {
     box-shadow: 0px 0px 12px var(--accent-color1);
 }
 
-#home .basket {
+.basket {
     margin: 1em;
     padding: .5em 0 .5em 0;
     float: left;
@@ -214,7 +216,7 @@ header span {
     box-shadow: 0px 0px 12px var(--accent-color1);
 }
 
-#home .silhouette {
+.silhouette {
     margin: 1em;
     padding: .5em;
     float: right;
@@ -531,7 +533,6 @@ figcaption {
 #newsletter-form {
     max-width: 600px;
     margin: 1em auto;
-    display: block;
 }
 
 #newsletter-form form {
@@ -564,27 +565,21 @@ figcaption {
     margin: 1em 0;
 }
 
-#newsletter-form input,
-#newsletter-form label,
-#newsletter-form select {
-    width: 90%;
-}
-
 #newsletter-form .contact input,
 #newsletter-form select {
+    width: 90%;
     height: 2em;
     margin-bottom: 2em;
 }
 
-#checked,
-#radio {
+#newsletter-form div {
     display: grid;
     grid-template-columns: 10% auto;
     gap: 10px;
 }
 
-#checked input[type="checkbox"],
-#radio input[type="radio"] {
+#newsletter-form input[type="checkbox"],
+#newsletter-form input[type="radio"] {
     width: 1.5em;
     height: 1.5em;
 }
