@@ -46,6 +46,10 @@ h2 {
     font-family: var(--heading-font);
 }
 
+h1 {
+    text-align: center;
+}
+
 /********* Header *********/
 header {
     display: grid;
@@ -120,19 +124,19 @@ header span {
 }
 
 /********* Main Home *********/
-.home .hero {
+#home .hero {
     position: relative;
     margin: 0 auto;
 }
 
-.home .hero img {
+#home .hero img {
     max-width: 100%;
     height: auto;
     border-radius: 0 0 1em 1em;
 }
 
 /* button for newsletter */
-.home .newsletter {
+#home .newsletter {
     position: absolute;
     bottom: 45%;
     right: 5%;
@@ -147,30 +151,25 @@ header span {
     font-weight: 500;
 }
 
-.home .newsletter:hover {
+#home .newsletter:hover {
     background-color: var(--primary-color);
     color: var(--text-color1);
     box-shadow: -3px 3px 12px var(--accent-color2);
 }
 
-.home .newsletter:focus {
+#home .newsletter:focus {
     outline: none;
 }
 
-.home h1 {
-    text-align: center;
-    margin-top: 1em;
-}
-
-.home .name, .home .back {
+#name, #back {
     font-family: var(--heading-font);
 }
 
-.home .name {
+#home #name {
     text-shadow: 1px 1px 2px var(--accent-color1);
 }
 
-.home section {
+#home section {
     max-width: 800px;
     margin: 1.5em auto;
     padding: 1em;
@@ -179,7 +178,7 @@ header span {
     box-shadow: 0px 0px 12px var(--accent-color2);
 }
 
-.home h2 {
+#home h2 {
     text-align: center;
     margin-bottom: 1em;
     background-color: var(--secondary-color);
@@ -189,7 +188,7 @@ header span {
     color: var(--text-color2);
 }
 
-.home .disc {
+#home .disc {
     margin: 1em;
     padding: .1em;
     float: right;
@@ -202,7 +201,7 @@ header span {
     box-shadow: 0px 0px 12px var(--accent-color1);
 }
 
-.home .basket {
+#home .basket {
     margin: 1em;
     padding: .5em 0 .5em 0;
     float: left;
@@ -215,7 +214,7 @@ header span {
     box-shadow: 0px 0px 12px var(--accent-color1);
 }
 
-.home .silhouette {
+#home .silhouette {
     margin: 1em;
     padding: .5em;
     float: right;
@@ -228,41 +227,38 @@ header span {
     box-shadow: 0px 0px 12px var(--accent-color1);
 }
 
-.home section p {
+#home section p {
     line-height: 1.5;
     font-size: 1.2rem;
     color: var(--text-color1);
     padding: 1em;
 }
 
-.home section ul {
+#home section ul {
     list-style: disc;
     padding-left: 2em;
 }
 
-.home section ul li {
+#home section ul li {
     margin-bottom: 0.5em;
     color: var(--text-color1);
 }
 
 /********* Main Discs *********/
-.discs {
+#discs {
     margin: 0 auto;
     padding: 1em;
 }
 
-.discs h1 {
-    text-align: center;
-}
-
-.discs p {
+#discs p {
     max-width: 800px;
     font-weight: 500;
     margin: 1em auto;
 }
 
-.discs .sample {
+#discs #sample {
     font-weight: 600;
+    font-size: 1.2em;
 }
 
 .discover {
@@ -374,8 +370,8 @@ header span {
     border: none;
 }
 
-/* Basics */
-.basics {
+/* Disc Basics */
+#basics {
     margin-top: 1em;
     padding: 1em;
     color: var(--text-color1);
@@ -411,42 +407,41 @@ figcaption {
     padding-right: 3em;
 }
 
-.discs h3 {
+#discs h3 {
     font-family: var(--heading-font);
     margin: 1em 2em;
     color: var(--text-color1);
 }
 
-.discs table {
+#discs table {
     width: 90%;
     border: 1px solid var(--text-color1);
     border-collapse: collapse;
     margin: 1em auto;
 }
 
-.discs th,
-.discs td {
+#discs th,
+#discs td {
     border: 1px solid var(--text-color1);
     padding: 0.5em;
-    text-align: center;
 }
 
-.discs th {
+#discs th {
     background-color: var(--secondary-color);
     color: var(--text-color2);
 }
 
-.discs ul {
+#discs ul {
     list-style: disc;
     padding-left: 2em;
     margin: 1em 3em;
 }
 
-.discs ul li {
+#discs ul li {
     margin-bottom: 1em;
 }
 
-.tip {
+#tip {
     max-width: 90%;
     background-color: #e7f3fe;
     border-left: 6px solid #2196F3;
@@ -454,24 +449,20 @@ figcaption {
     margin: 1em auto;
 }
 
-.discs span {
+#discs span {
     font-weight: bold;
 }
 
-.rhbh {
+#rhbh {
     margin: 1em 3em;
     font-style: italic;
 }
 
 /********* Main Locations *********/
-.locate {
+#locate {
     max-width: 800px;
     margin: 0 auto;
     padding: 1em;
-}
-
-.locate h1 {
-    text-align: center;
 }
 
 .city {
@@ -513,48 +504,44 @@ figcaption {
     font-weight: bold;
 }
 
-.locate .locate-p {
+#locate #locate-p {
     margin-bottom: 1em;
     font-weight: 500;
 }
 
-.locate ul {
+#locate ul {
     list-style: disc;
     padding-left: 1.5em;
 }
 
-.locate ul li {
+#locate ul li {
     margin-bottom: 0.5em;
 }
 
-.locate a {
+#locate a {
     color: var(--secondary-color);
     text-decoration: none;
 }
 
-.locate a:hover {
+#locate a:hover {
     text-decoration: underline;
 }
 
 /********* Main Newsletter *********/
-.newsletter-form h1 {
-    text-align: center;
-}
-
-.newsletter-form {
+#newsletter-form {
     max-width: 600px;
     margin: 1em auto;
     display: block;
 }
 
-.newsletter-form form {
+#newsletter-form form {
     border: 4px solid var(--secondary-color);
     border-radius: 2em;
     overflow: hidden;
     padding: 1em;
 }
 
-.newsletter-form fieldset {
+#newsletter-form fieldset {
     display: flex;
     flex-direction: column;
     padding: 1.5em .5em;
@@ -565,44 +552,44 @@ figcaption {
     font-size: 1.2em;
 }
 
-.newsletter-form fieldset legend {
+#newsletter-form fieldset legend {
     font-weight: 600;
     font-size: 1.6em;
     margin: .5em;
 }
 
-.newsletter-form fieldset span {
+#newsletter-form fieldset span {
     font-weight: 600;
     font-size: 1.3em;
     margin: 1em 0;
 }
 
-.newsletter-form input,
-.newsletter-form label,
-.newsletter-form select {
+#newsletter-form input,
+#newsletter-form label,
+#newsletter-form select {
     width: 90%;
 }
 
-.newsletter-form .contact input,
-.newsletter-form select {
+#newsletter-form .contact input,
+#newsletter-form select {
     height: 2em;
     margin-bottom: 2em;
 }
 
-.checked,
-.radio {
+#checked,
+#radio {
     display: grid;
     grid-template-columns: 10% auto;
     gap: 10px;
 }
 
-.checked input[type="checkbox"],
-.radio input[type="radio"] {
+#checked input[type="checkbox"],
+#radio input[type="radio"] {
     width: 1.5em;
     height: 1.5em;
 }
 
-.newsletter-form input[type="submit"] {
+#newsletter-form input[type="submit"] {
     width: 95%;
     text-align: center;
     background-color: var(--accent-color2);
@@ -616,18 +603,14 @@ figcaption {
     box-shadow: -2px 2px 8px var(--primary-color);
 }
 
-.newsletter-form input[type="submit"]:hover {
+#newsletter-form input[type="submit"]:hover {
     cursor: pointer;
     background-color: var(--primary-color);
     color: var(--text-color1);
 }
 
 /********* Thanks *********/
-.thanks h1 {
-    text-align: center;
-}
-
-.thanks .submitted {
+#thanks #submitted {
     text-align: center;
     padding: 1em;
     font-weight: 500;
@@ -654,29 +637,25 @@ figcaption {
 }
 
 /********* Attributions *********/
-.attributions {
+#attributions {
     display: block;
     margin: 1em auto;
 }
 
-.attributions h1 {
-    text-align: center;
-}
-
-.attributions div {
+#attributions div {
     margin: 1em;
     border: 3px solid var(--accent-color2);
     border-radius: 25px;
     padding: .5em;
 }
 
-.attributions p {
+#attributions p {
     margin: .75em 0;
     font-weight: 500;
     font-size: 1.3em;
 }
 
-.attributions span {
+#attributions span {
     font-weight: 700;
 }
 

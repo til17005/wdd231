@@ -31,8 +31,8 @@ navLinks.forEach(link => {
 import { getVisitStorage } from './storage.mjs';
 
 if (getURL.includes('/final/index.html')) {
-    const name = document.querySelector('.name');
-    const back = document.querySelector('.back')
+    const name = document.getElementById('name');
+    const back = document.getElementById('back')
 
     if (getVisitStorage()) {
         name.innerHTML = `${getVisitStorage()},`;
