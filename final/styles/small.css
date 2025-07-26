@@ -124,19 +124,19 @@ header span {
 }
 
 /********* Main Home *********/
-#home .hero {
+.hero {
     position: relative;
     margin: 0 auto;
 }
 
-#home .hero img {
+.hero img {
     max-width: 100%;
     height: auto;
     border-radius: 0 0 1em 1em;
 }
 
 /* button for newsletter */
-#home .newsletter {
+.newsletter {
     position: absolute;
     bottom: 45%;
     right: 5%;
@@ -151,13 +151,13 @@ header span {
     font-weight: 500;
 }
 
-#home .newsletter:hover {
+.newsletter:hover {
     background-color: var(--primary-color);
     color: var(--text-color1);
     box-shadow: -3px 3px 12px var(--accent-color2);
 }
 
-#home .newsletter:focus {
+.newsletter:focus {
     outline: none;
 }
 
@@ -171,7 +171,7 @@ header span {
 }
 
 /* Content */
-#home section {
+section {
     max-width: 800px;
     margin: 1.5em auto;
     padding: 1em;
@@ -180,7 +180,7 @@ header span {
     box-shadow: 0px 0px 12px var(--accent-color2);
 }
 
-#home h2 {
+section h2 {
     text-align: center;
     margin-bottom: 1em;
     background-color: var(--secondary-color);
@@ -229,19 +229,19 @@ header span {
     box-shadow: 0px 0px 12px var(--accent-color1);
 }
 
-#home section p {
+section p {
     line-height: 1.5;
     font-size: 1.2rem;
     color: var(--text-color1);
     padding: 1em;
 }
 
-#home section ul {
+section ul {
     list-style: disc;
     padding-left: 2em;
 }
 
-#home section ul li {
+section ul li {
     margin-bottom: 0.5em;
     color: var(--text-color1);
 }
@@ -256,11 +256,6 @@ header span {
     max-width: 800px;
     font-weight: 500;
     margin: 1em auto;
-}
-
-#discs #sample {
-    font-weight: 600;
-    font-size: 1.2em;
 }
 
 .discover {
@@ -392,6 +387,7 @@ header span {
     aspect-ratio: 1024/222;
     width: 100%;
     height: auto;
+    margin-top: .5em;
 }
 
 .flight-path {
@@ -453,9 +449,6 @@ figcaption {
 
 #discs span {
     font-weight: bold;
-}
-
-#rhbh {
     margin: 1em 3em;
     font-style: italic;
 }
@@ -506,7 +499,7 @@ figcaption {
     font-weight: bold;
 }
 
-#locate #locate-p {
+#locate p {
     margin-bottom: 1em;
     font-weight: 500;
 }

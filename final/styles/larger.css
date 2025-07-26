@@ -34,7 +34,7 @@
 
     /********* Main Home *********/
     /* button for newsletter */
-    #home .newsletter {
+    .newsletter {
         bottom: 25%;
     }
 
