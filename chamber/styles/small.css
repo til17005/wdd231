@@ -21,6 +21,10 @@
     font-family: var(--standard-font);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /********* Header *********/
 header {
     display: grid;
@@ -419,7 +423,7 @@ input[type=submit]:hover {
     background-color: var(--primary-color);
     border: 1px solid var(--accent-color2);
     border-radius: 0 1em;
-    width: 300px;
+    max-width: 300px;
     font-weight: 600;
 }
 
